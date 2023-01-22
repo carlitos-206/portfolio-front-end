@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Front-End Development",
+    "Languages": ["HTML5", "CSS", "JS"],
+    "Frameworks": ["React.js"],
+    "libraries": ["Bootstrap", "Material-UI", "React-Bootstrap", "Pure.css", "animate.css", "tailwind.css"],
+    "testing": ["ESLint", "Jest"],
+    "Tools":["Balsamiq"]
+  },
+  {
+    "type": "Back-End Development",
+    "Languages": ["Python", "JavaScript"],
+    "Frameworks": ["Django", "Express.js", "Node.js"],
+    "Databases": {
+      "SQL": ["MySQL", "SQLlite"],
+      "NoSQL": ["MongoDB", "Google Firebase"]
+    },
+    "testing": ["Jest"],
+    "tools":[
+      {
+        "type": "Version Control",
+        "tool": ["Git", "GitHub"]
+      },
+      {
+        "type": "Deployment",
+        "tool": ["Heroku", "Netlify", "AWS EC2 VM", "Ngrok"]
+      },
+      {
+        "type": "API",
+        "tool": ["REST", "GraphQL"]
+      },
+      {
+        "type": "OS",
+        "tool": ["Linux", "Windows"]
+      }
+    ]
+  }
+]

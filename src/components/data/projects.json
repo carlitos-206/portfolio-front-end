@@ -1,0 +1,19 @@
+[
+  {
+    "title":"NodeJS: OpenAI Collection",
+    "link":"https://github.com/carlitos-206/OpenAiCollection",
+    "language":"JS",
+    "frameWork": "Node JS"
+  },
+  {
+    "title": "Django: OpenAI API",
+    "link": "https://github.com/carlitos-206/django_ai_api",
+    "language":"Python",
+    "frameWork": "Django"
+  },{
+    "title":"Chapman Art by Barbara L. Chapman",
+    "link": "https://chapman-art.com/",
+    "language": "CMS: WordPress",
+    "frameWork": ""
+  }
+]
