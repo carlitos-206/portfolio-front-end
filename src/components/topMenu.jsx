@@ -33,6 +33,13 @@ export default function TopMenuBar({sectionName}){
   })
   }
 
+  const scrollToForm = (e) =>{
+    e.preventDefault()
+    let top = document.getElementById('top')
+    top.scrollIntoView()
+    let form = document.getElementsByClassName('contact-form')[0]
+    form.setAttribute('style', 'display:block')
+  }
   const scrollToAiArt=(e)=>{
     e.preventDefault()
     let aiArtCreator = document.getElementById('aiArt')
@@ -40,7 +47,6 @@ export default function TopMenuBar({sectionName}){
   }
 
   if(sectionName === 'landingPage'){
-    console.log(window.location.href)
     return(
       <>
       <section className="topMenu-div section-background-light" style={{display: 'flex'}}>
@@ -73,7 +79,7 @@ export default function TopMenuBar({sectionName}){
                     position: 'relative',
                   }}
                   >Carlos R. Cáceres Martínez </p>
-                  <Button variant="primary" className="nav-menu-button" onClick={(e)=>{alert('here')}}>Contact</Button>
+                  <Button variant="primary" className="nav-menu-button" onClick={(e)=>{scrollToForm(e)}}>Contact</Button>
                   <Button variant="primary" className="nav-menu-button" onClick={(e)=>{downloadResume(e)}}>Download Resume</Button>
                   <Button variant="secondary" className="nav-menu-button" onClick={(e)=>{alert('Coming Soon!')}} >Ai Chat</Button>
                   <Button variant="primary" className="nav-menu-button" onClick={(e)=>{scrollToAiArt(e)}} >Create Ai Art</Button>
