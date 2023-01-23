@@ -26,7 +26,7 @@ export default function TopImgs(){
           </section>
           <section className="openai-text">
             <p className="text-lift-light">
-              Favorite images I've generated
+              Images family, friends and I have generated
             </p>
           </section>
         </section>
