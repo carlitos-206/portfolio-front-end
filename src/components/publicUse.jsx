@@ -31,10 +31,11 @@ export default function PublicUse(){
   useEffect(()=>{
     getCookie("aiImgGenerationAgreement")
   },[])
-
+/* eslint-disable */
   useEffect(()=>{
     policyViolation(prompt)
   },[policy])
+/* eslint-enable */
 
   const userImgGeneratorAgrement = (e) =>{
     e.preventDefault()
