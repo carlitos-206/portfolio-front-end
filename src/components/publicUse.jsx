@@ -23,6 +23,9 @@ export default function PublicUse(){
         c.substring(name.length, c.length)
         document.getElementById('agreementSection').setAttribute('style', 'display:none')
         return c.substring(name.length, c.length);
+      }else{
+        document.getElementById('ai_art_request_form_val').disabled = true
+        document.getElementById('public_submit_button').disabled = true
       }
     }
     return "";
