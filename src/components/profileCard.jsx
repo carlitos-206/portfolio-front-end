@@ -1,25 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from "react-bootstrap/Form"
 import profileImg from './images/ui_needs/profile.png'
 import { profileCardContactList } from "./images/contact/contactList";
+import { contactFormSendOff } from "./firebaseDb/SendOffs";
 export default function ProfileCard() {
-  
+  const[name, setName] = useState(null);
+  const[email, setEmail] = useState(null);
+  const[message, setMessage] = useState(null);
   const openForm = (e) =>{
-    e.preventDefault()
-    let formDiv = document.getElementsByClassName('contact-form')[0]
-    formDiv.setAttribute('style', 'display:block')
+    e.preventDefault();
+    let formDiv = document.getElementsByClassName('contact-form')[0];
+    formDiv.setAttribute('style', 'display:block');
 
   }
   
-  const sendForm = (e) => {
-    e.preventDefault()
-    let formDiv = document.getElementsByClassName('contact-form')[0]
-    formDiv.setAttribute('style', 'display:none')
-    console.log(e)
-    alert("Thank you well get back to you soon")
-    document.getElementById('contact-form-fields').reset()
+  const sendForm = async (e) => {
+    e.preventDefault();
+    let formDiv = document.getElementsByClassName('contact-form')[0];
+    formDiv.setAttribute('style', 'display:none');
+    let data = {
+      name: name,
+      email: email,
+      message: message
+    }
+    let formSendoff = await contactFormSendOff(data)
+    if(formSendoff){
+      alert("Thank you well get back to you soon")
+      document.getElementById('contact-form-fields').reset()
+    }
   }
 
 
@@ -57,12 +67,16 @@ export default function ProfileCard() {
         <Card.Body>
           <Form onSubmit={(e)=>{sendForm(e)}} id="contact-form-fields">
             <Form.Group className="mb-3">
+              <Form.Label>Name</Form.Label>
+              <Form.Control onChange={(e)=>{setName(e.target.value)}} type="text" placeholder="Enter your name" className="form-fields" required/>
+            </Form.Group>
+            <Form.Group className="mb-3">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter your email" className="form-fields" required/>
+              <Form.Control onChange={(e)=>{setEmail(e.target.value)}} type="email" placeholder="Enter your email" className="form-fields" required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Message</Form.Label>
-              <Form.Control  as="textarea" placeholder="Write a message" className="form-fields" required/>
+              <Form.Control onChange={(e)=>{setMessage(e.target.value)}}  as="textarea" placeholder="Write a message" className="form-fields" required/>
             </Form.Group>
             <Button variant="primary" type="submit" className="contact-form-buttons">Submit</Button>
             <Button variant="primary" type="button" className="contact-form-buttons" onClick={(e)=>{closeForm(e)}}>Cancel</Button>
