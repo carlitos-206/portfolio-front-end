@@ -14,16 +14,18 @@ const configuration = new Configuration({
 const openAI =  new OpenAIApi(configuration);
 
 
-export async function pedoCheck(prompt){
+export async function ruleOneCheck(prompt){
   try{
       // API Call to Open AI
       const apiCall = await openAI.createModeration({
-        input: prompt
+        status:400, 
+        input: prompt,
+        type: 'Error: Violation of Rule 1'
       })
       if(apiCall.data.results[0].categories['sexual/minors'] === false){
         return false
       }else{
-        return apiCall
+        return true
       }
     }
     // If the call fails this is a fail safe so the app doesnt break

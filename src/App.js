@@ -117,9 +117,9 @@ function App() {
       
       
     </div>
-          <Footer/>
           </section>
         </section>
+          <Footer/>
         
 
             {/* <AboutMe /> */}

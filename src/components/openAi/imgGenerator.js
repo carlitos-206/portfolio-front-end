@@ -17,7 +17,7 @@ import { Configuration, OpenAIApi } from 'openai';
 // require('dotenv').config()
 
 
-// import { pedoCheck } from './aiModerator';
+import { ruleOneCheck } from './aiModerator';
 // Other NPM imports
 // import { writeFileSync } from 'fs';
 // import inquirer from 'inquirer'
@@ -96,12 +96,12 @@ const openAI =  new OpenAIApi(configuration);
 
 export async function userAiArtRequest(prompt){
   let img_url;
-
+  let apiCall;
+  const moderationCheck = await ruleOneCheck(prompt)
   try{
-      // const moderationCheck = await pedoCheck(prompt)
-      // if(moderationCheck === false){
+      if(moderationCheck === false){
         // API Call to Open AI
-        const apiCall = await openAI.createImage({
+        apiCall = await openAI.createImage({
           prompt,
           n:1,
           size: '1024x1024'
@@ -113,28 +113,29 @@ export async function userAiArtRequest(prompt){
           let response = {
           status: 200,
           url: img_url,
-          prompt: prompt
+          full_data:apiCall,
+          prompt: prompt,
+          moderationCheck: moderationCheck
           }
           return response
-        // }else{
-        //   let response = {
-        //     status: 500,
-        //     prompt: prompt,
-        //     type: "Error",
-        //     openAi_url: img_url,
-        //     error: storageResponse
-        //   }
-        //   return response
-        // }
-      // }else{
-      //   let response = {
-      //     status: 404,
-      //     prompt: `User Searched: ${prompt}`,
-      //     type: 'Error',
-      //     moderationCheck: moderationCheck
-      //   }
-      //   return response
-      // }
+        }else if(moderationCheck.status === 400){
+          let response = {
+            status: 400,
+            prompt: prompt,
+            type: "Error",
+            error: "Violation of rule 1"
+          }
+          return response
+        }
+        else{
+        let response = {
+          status: 400,
+          prompt: `User Searched: ${prompt}`,
+          type: 'Error',
+          moderationCheck: moderationCheck
+        }
+        return response
+      }
     }
     // If the call fails this is a fail safe so the app doesnt break
     catch(err){
@@ -143,7 +144,8 @@ export async function userAiArtRequest(prompt){
         status:500, 
         prompt: prompt,
         type: 'Error', 
-        error:err,
+        error:JSON.parse(err.response.request.response).error.message,
+        moderationCheck:moderationCheck,
         url: img_url ?? 'n/a'
       }
       return response

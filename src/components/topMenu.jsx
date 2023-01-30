@@ -35,8 +35,8 @@ export default function TopMenuBar({sectionName}){
 
   const scrollToForm = (e) =>{
     e.preventDefault()
-    let top = document.getElementById('top')
-    top.scrollIntoView()
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     let form = document.getElementsByClassName('contact-form')[0]
     form.setAttribute('style', 'display:block')
   }
@@ -64,7 +64,8 @@ export default function TopMenuBar({sectionName}){
             display: "flex",
             justifyContent: 'flex-end',
             position: 'relative',
-            right:"25px"
+            right:"25px",
+            zIndex: 6
           }}>
             <button className="menu-button" onClick={(e)=>{openMenu(e)}}>
               <img src={burgerMenu} alt="Click 4 Menu" style={{display:'flex',Content: 'flex-end'}} />
@@ -81,7 +82,7 @@ export default function TopMenuBar({sectionName}){
                   >Carlos R. Cáceres Martínez </p>
                   <Button variant="primary" className="nav-menu-button" onClick={(e)=>{scrollToForm(e)}}>Contact</Button>
                   <Button variant="primary" className="nav-menu-button" onClick={(e)=>{downloadResume(e)}}>Download Resume</Button>
-                  <Button variant="secondary" className="nav-menu-button" onClick={(e)=>{alert('Coming Soon!')}} >Ai Chat</Button>
+                  {/* <Button variant="secondary" className="nav-menu-button" onClick={(e)=>{alert('Coming Soon!')}} >Ai Chat</Button> */}
                   <Button variant="primary" className="nav-menu-button" onClick={(e)=>{scrollToAiArt(e)}} >Create Ai Art</Button>
                   <Button variant="danger" className="nav-menu-button" >Close</Button>
                 </section>
