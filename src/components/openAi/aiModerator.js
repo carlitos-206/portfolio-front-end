@@ -18,19 +18,22 @@ export async function ruleOneCheck(prompt){
   try{
       // API Call to Open AI
       const apiCall = await openAI.createModeration({
-        status:400, 
         input: prompt,
-        type: 'Error: Violation of Rule 1'
       })
       if(apiCall.data.results[0].categories['sexual/minors'] === false){
-        return false
+        let response = {
+          status:200, 
+        }
+        return response
       }else{
-        return true
+        let response = {
+          status:400, 
+        }
+        return response
       }
     }
     // If the call fails this is a fail safe so the app doesnt break
     catch(err){
-      
       let response = {
         status:500, 
         prompt: prompt,

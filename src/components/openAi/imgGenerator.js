@@ -99,7 +99,7 @@ export async function userAiArtRequest(prompt){
   let apiCall;
   const moderationCheck = await ruleOneCheck(prompt)
   try{
-      if(moderationCheck === false){
+      if(moderationCheck.status === 200){
         // API Call to Open AI
         apiCall = await openAI.createImage({
           prompt,
@@ -118,24 +118,23 @@ export async function userAiArtRequest(prompt){
           moderationCheck: moderationCheck
           }
           return response
-        }else if(moderationCheck.status === 400){
+        } else if(moderationCheck.status === 400){
           let response = {
             status: 400,
-            prompt: prompt,
-            type: "Error",
-            error: "Violation of rule 1"
+            prompt: `User Searched: ${prompt}`,
+            type: 'Error',
+            moderationCheck: moderationCheck
+          }
+          return response
+        }else{
+          let response = {
+            status: 500,
+            prompt: `User Searched: ${prompt}`,
+            type: 'Error',
+            moderationCheck: moderationCheck
           }
           return response
         }
-        else{
-        let response = {
-          status: 400,
-          prompt: `User Searched: ${prompt}`,
-          type: 'Error',
-          moderationCheck: moderationCheck
-        }
-        return response
-      }
     }
     // If the call fails this is a fail safe so the app doesnt break
     catch(err){

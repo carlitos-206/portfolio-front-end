@@ -22,8 +22,12 @@ export default function PublicUse(){
       if (c.indexOf(name) === 0) {
         c.substring(name.length, c.length)
         document.getElementById('agreementSection').setAttribute('style', 'display:none')
+        document.getElementById('ai_art_request_form_val').disabled = false
+        document.getElementById('public_submit_button').disabled = false
         return c.substring(name.length, c.length);
       }else{
+        localStorage.removeItem('img')
+        document.getElementById('agreementSection').setAttribute('style', 'display:block')
         document.getElementById('ai_art_request_form_val').disabled = true
         document.getElementById('public_submit_button').disabled = true
       }
@@ -34,11 +38,11 @@ export default function PublicUse(){
   useEffect(()=>{
     getCookie("aiImgGenerationAgreement")
   },[])
-/* eslint-disable */
   useEffect(()=>{
-    policyViolation(prompt)
-  },[policy])
-/* eslint-enable */
+    if(policy !== null){
+      policyViolation(prompt)
+    }
+  },[policy, prompt])
 
   const userImgGeneratorAgrement = (e) =>{
     e.preventDefault()
@@ -49,7 +53,6 @@ export default function PublicUse(){
   }
   const sendRequest = async (e) =>{
     e.preventDefault()
-
     document.getElementById('ai_art_request_form').reset()
     let ai_art = document.getElementById("aiArt")
     ai_art.classList.add('load')
@@ -64,33 +67,34 @@ export default function PublicUse(){
     }
     if(request.status === 200){
       console.log(request)
+      let date = Date.now()
+      let expiration_time = parseInt(date) + 3600000
       let response = JSON.stringify({
         url: request.url,
         prompt: request.prompt,
-        request:request
+        request:request,
+        img_expiration: expiration_time
       })
       localStorage.setItem('img', response)
       document.getElementById('public_submit_button').disabled = false
       document.getElementById('ai_art_request_form_val').disabled = false
       ai_art.classList.remove('load')
-
       alert("Images erase after 1 hour dont forget to save them")
       window.location.reload()
-    }else if(request.status === 400){
-      console.log(request.message)
     }else{
       console.log(request)
       ai_art.classList.remove('load')
       document.getElementById('ai_art_request_form_val').disabled = false
       document.getElementById('public_submit_button').disabled = false
-      if(request.moderationCheck === true || (request.error === "Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system." && request.prompt !== "")){
+      if(request.moderationCheck.status === 400 || (request.error === "Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system." && request.prompt !== "")){
         setPolicy(request)
+        policyViolation()
         alert('Rule 1 has been violatated')
         setTimeout(()=>{
           let data = JSON.parse(sessionStorage.getItem('data'))
           alert(`
   THIS IS YOUR REFLECTION....
-  
+
   Large Scale Location:
     IP: ${JSON.stringify(data.location.ip)}
     CITY: ${JSON.stringify(data.location.city)}
@@ -151,8 +155,9 @@ export default function PublicUse(){
           <p className="agreementFields fieldIsBold underline">Rules for using the AI Image Generator</p>
           <p className="agreementFields">1. You cannot use profanity or sexual suggestive language when making a request if you create more than one request violating this rule you will be IP and device banned from making any future request. If you have been banned, you can appeal against it. </p>
           <p className="agreementFields fieldIsBold indent">* Your IP and Device will <span className="underline">ONLY</span> be tracked if you violate Rule 1</p>
-          <p className="agreementFields">2.	Have Fun !!!</p>
-          
+          <p className="agreementFields">2.	Each Prompt collected.</p>
+          <p className="agreementFields">3.	 <span className="underline fieldIsBold">Images are not collected. Those images belong to you the creator</span>!</p>
+          <p className="agreementFields">4.	Have Fun !!!</p>
         <Button id='public_submit_button' className="elevate-icon glow-on-hover"variant="primary" type="submit" >
             Agree
           </Button>
