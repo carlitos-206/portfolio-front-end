@@ -6,16 +6,17 @@ import Button from 'react-bootstrap/Button';
 import { userAiArtRequest } from "./openAi/imgGenerator";
 import { policyViolation, aiImgPromptSendOff, terminationSendOff } from "./firebaseDb/SendOffs";
 import eliminatePrivileges from "./globalFunctions/eliminate";
+import isBanned from "./globalFunctions/isBanned";
 
 
 export default function PublicUse(){
   const [ prompt, setPrompt ] = useState(null)
   const [policy, setPolicy] = useState(null)
-
+  
 
   // This function checks if the cookie for user agreement exist to be able to make Open Ai calls
   function getCookie(cname) {
-    let name = cname + "=True";
+    let name = cname + "=true";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
     for(let i = 0; i <ca.length; i++) {
@@ -39,18 +40,34 @@ export default function PublicUse(){
     document.getElementById('public_submit_button').disabled = true
     return "";
   }
+  const banCheck = async() =>{
+    let ban = await isBanned()
+    if(ban === true){
+
+      let form = document.getElementById('aiArt')
+      form.setAttribute('style', 'display:none')
+      alert(`
+      This device and IP have been banned from making 
+      Ai images. If you belive this is a mistake
+      contact me for support. Thank you.
+      `)
+    }
+  }
   // on arrival checks for the cookie
   useEffect(()=>{
     getCookie("aiImgGenerationAgreement")
+    banCheck()
   },[])
 
   // when the policy and the prompt are not null then it will run a begin to track policy violations
   useEffect(()=>{
+    banCheck()
     if(policy !== null && prompt !== null){
       policyViolation(prompt)
       setPolicy(null)
     }
   },[policy, prompt])
+
 
   // when the user agrees to the form it will remove the banner and enable the submit button
   // the cookie function is a fail safe
@@ -59,7 +76,7 @@ export default function PublicUse(){
     document.getElementById('ai_art_request_form_val').disabled = false
     document.getElementById('public_submit_button').disabled = false
     document.getElementById('agreementSection').setAttribute('style', 'display:none')
-    document.cookie = "aiImgGenerationAgreement=True; expires=Fri, 01 Jan 2049 00:00:00 UTC;"
+    document.cookie = "aiImgGenerationAgreement=true; expires=Fri, 01 Jan 2049 00:00:00 UTC;"
   }
   // this is the function that controls the logic for all the returned reponses from Open Ai
   const sendRequest = async (e) =>{
@@ -149,11 +166,12 @@ export default function PublicUse(){
         let blocked = await terminationSendOff()
         let form = document.getElementById('aiArt')
         if(blocked){
-          form.classList.add('remove')
+          form.setAttribute('style', 'display:none')
           await eliminatePrivileges()
           alert('You are now banned from making any new request')
 
         }
+        form.setAttribute('style', 'display:none')
         await eliminatePrivileges()
         alert('You are now banned from making any new request')
       }
