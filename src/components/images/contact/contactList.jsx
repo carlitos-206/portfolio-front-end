@@ -1,3 +1,6 @@
+// This file contains the Icons and URLS for them
+
+// This is the imgs imports
 import email from './email.png';
 import github from './github.png';
 import instagram from './instagram.png';
@@ -7,6 +10,7 @@ import youtube from './youtube.png';
 import twitch from './twitch.png'
 import me from './me.svg'
 
+// This is the array the contains the objects for contact points
 export const contactListFull = [
   {
     title: 'Main Site',

@@ -37,7 +37,7 @@ const openAI =  new OpenAIApi(configuration);
 
 
 
-
+// This is for fetchin img
 
 
 // // This function Creates the img file and sends it to firebase storage
@@ -93,12 +93,14 @@ const openAI =  new OpenAIApi(configuration);
 
 
 
-
+// This is for making the api request to the Open Ai Server
 export async function userAiArtRequest(prompt){
   let img_url;
   let apiCall;
+  // This calls the moderator
   const moderationCheck = await ruleOneCheck(prompt)
   try{
+      // the prompt isn't flagged
       if(moderationCheck.status === 200){
         // API Call to Open AI
         apiCall = await openAI.createImage({
@@ -118,7 +120,9 @@ export async function userAiArtRequest(prompt){
           moderationCheck: moderationCheck
           }
           return response
-        } else if(moderationCheck.status === 400){
+        } 
+        // If it gets flagged
+        else if(moderationCheck.status === 400){
           let response = {
             status: 400,
             prompt: `User Searched: ${prompt}`,
@@ -126,7 +130,9 @@ export async function userAiArtRequest(prompt){
             moderationCheck: moderationCheck
           }
           return response
-        }else{
+        }
+        // There is an error in ai moderator
+        else{
           let response = {
             status: 500,
             prompt: `User Searched: ${prompt}`,
@@ -141,7 +147,7 @@ export async function userAiArtRequest(prompt){
       
       let response = {
         status:500, 
-        prompt: prompt,
+        prompt: `User Searched: ${prompt}`,
         type: 'Error', 
         error:JSON.parse(err.response.request.response).error.message,
         moderationCheck:moderationCheck,

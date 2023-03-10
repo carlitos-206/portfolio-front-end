@@ -1,4 +1,6 @@
-// This will serve as list of img for the tech stacks
+// This file holds the imgs that are generetad in the carousel
+
+// This is the img imports
 import adobe from './tech/adobe.png';
 import ajax from './tech/ajax.png';
 import animateCSS from './tech/animateCSS.png';
@@ -44,7 +46,7 @@ import vim from './tech/vim.png';
 import vsCode from './tech/vsCode.png';
 import windows from './tech/windows.png';
 
-
+// this is the array that contains the img src
 export const techList = [
   adobe, 
   ajax, 

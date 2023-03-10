@@ -1,4 +1,7 @@
+// this file holds the about me 
+
 import React from "react";
+// BootStrap
 import Card from 'react-bootstrap/Card';
 
 export default function AboutMe(){

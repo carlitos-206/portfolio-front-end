@@ -1,8 +1,16 @@
+// This File holds all the functions for Firebase Send Offs
+
+// Firebase Imports
 import {addDoc, collection} from 'firebase/firestore';
-import { PolicyViolationCollection } from '../files/violationCollection';
 import { db } from './firebaseAuth';
+
+// NPM Imports
 import { v4 as uuidv4 } from 'uuid'
 
+// Custom Imports
+import { PolicyViolationCollection } from '../files/violationCollection';
+
+// This function records the contact form
 export const contactFormSendOff = async (contactForm) =>{
   const docRef = collection(db, 'contactRequest' )
   const data = {
@@ -16,6 +24,7 @@ export const contactFormSendOff = async (contactForm) =>{
   return true
 }
 
+// This function records the prompts by users
 export const aiImgPromptSendOff = async (prompt) =>{
   const docRef = collection(db, 'ai_img_prompt' )
   const data = {
@@ -27,6 +36,7 @@ export const aiImgPromptSendOff = async (prompt) =>{
   return true
 }
 
+// This function records the Policy violation 
 export const policyViolation = async (prompt) =>{
   let dataCollection = JSON.parse(sessionStorage.getItem('data'))
     let incidentId = uuidv4()
@@ -55,4 +65,23 @@ export const policyViolation = async (prompt) =>{
     await addDoc(docRef, data)
     return incidentId
   }
+}
+
+// This function will log the users IP and deny any future request
+export const terminationSendOff = async () =>{
+    let dataCollection = JSON.parse(sessionStorage.getItem('data'))
+    let incidentId = uuidv4()
+    const docRef = collection(db, 'blocked_ip')
+    try{
+      const data = {
+        id: incidentId,
+        ip: dataCollection.location.ip,
+        dataCollection: dataCollection,
+        timeStamp: new Date().toISOString()
+      }
+      await addDoc(docRef, data)
+      return true
+    }catch(error){
+      return false 
+    }
 }

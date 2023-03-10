@@ -1,5 +1,8 @@
+// This file holds the User collection logic
+
 // UserAgent Package
 const parser = require('ua-parser-js');
+
 // This is the function that calls preps the data to be sent to a database
 export async function PolicyViolationCollection() {
       // IP Info API
@@ -92,5 +95,6 @@ export async function PolicyViolationCollection() {
           } 
         },
       };
+      // Its kept in the session in order to track devivce movement if the policy is violates, since it will erase on browser closing
       sessionStorage.setItem('data', JSON.stringify(userInfoTree))
 }

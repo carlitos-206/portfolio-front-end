@@ -1,3 +1,4 @@
+// This file holds the Resume section
 import React from "react";
 const resume = require('./files/Resume.pdf')
 

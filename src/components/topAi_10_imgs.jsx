@@ -1,3 +1,4 @@
+// this file holds the 10 of my favorite imgs displayed top of the site
 import React, {useState, useEffect}from "react";
 import {ai_imgs_only_list } from "./images/ai_imgs/ai_img_list";
 import MyImgsCardBuilder from "./img_details_card";
