@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { userAiArtRequest } from "./openAi/imgGenerator";
 import { policyViolation, aiImgPromptSendOff, terminationSendOff } from "./firebaseDb/SendOffs";
-import { eliminatePrivileges } from "./globalFunctions/eliminate";
+import eliminatePrivileges from "./globalFunctions/eliminate";
 
 
 export default function PublicUse(){
