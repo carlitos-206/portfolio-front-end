@@ -43,9 +43,10 @@ export default function PublicUse(){
   const banCheck = async() =>{
     let ban = await isBanned()
     if(ban === true){
-
+      let agreementSection = document.getElementById('agreementSection')
       let form = document.getElementById('aiArt')
       form.setAttribute('style', 'display:none')
+      agreementSection.setAttribute('style', 'display:none')
       alert(`
       This device and IP have been banned from making 
       Ai images. If you belive this is a mistake
@@ -55,8 +56,8 @@ export default function PublicUse(){
   }
   // on arrival checks for the cookie
   useEffect(()=>{
-    getCookie("aiImgGenerationAgreement")
     banCheck()
+    getCookie("aiImgGenerationAgreement")
   },[])
 
   // when the policy and the prompt are not null then it will run a begin to track policy violations
@@ -209,10 +210,11 @@ export default function PublicUse(){
       <section id='agreementSection' className="public-form-container section-background-light card-container container-shape">
         <Form id = 'agreementForm' onSubmit={(e)=>{userImgGeneratorAgrement(e)}} >
           <p className="agreementFields fieldIsBold underline">Rules for using the AI Image Generator</p>
-          <p className="agreementFields">1. You cannot use profanity or sexual suggestive language when making a request if you create more than one request violating this rule you will be IP and device banned from making any future request. If you have been banned, you can appeal against it. </p>
-          <p className="agreementFields fieldIsBold indent">* Your IP and Device will <span className="underline">ONLY</span> be tracked if you violate Rule 1</p>
-          <p className="agreementFields">2.	Each Prompt collected.</p>
-          <p className="agreementFields">3.	 <span className="underline fieldIsBold">Images are not collected. Those images belong to you the creator</span>!</p>
+          <p className="agreementFields">1. Any use of profanity or sexually explicit language when submitting a request is strictly prohibited. If a user violates this rule more than once, they will be permanently banned from submitting future requests on their device and IP. However, users may submit an appeal to contest the ban. </p>
+          <p className="agreementFields fieldIsBold indent">* Please note that IP and device tracking will  <span className="underline">ONLY</span> be employed in cases where Rule 1 is breached.</p>
+          <p className="agreementFields">2.	All prompts will be collected.</p>
+          <p className="agreementFields">3.	The generated images are the property of the user, and no image will be stored any place outside the 1hr mark on my web app.</p>
+          <p className="agreementFields fieldIsBold indent">* Please note that images are deleted automatically after 1hr</p>
           <p className="agreementFields">4.	Have Fun !!!</p>
         <Button id='public_submit_button' className="elevate-icon glow-on-hover"variant="primary" type="submit" >
             Agree
