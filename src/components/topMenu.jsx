@@ -1,8 +1,11 @@
+// This file holds the menu for the site
 import React from "react";
 import burgerMenu from "./images/ui_needs/burgerMenu.svg"
 import Button from 'react-bootstrap/Button'
 const resume = require('./files/Resume.pdf')
 // import MainSlideShow from "./mainCarousel";
+
+// This is the function for the logic
 export default function TopMenuBar({sectionName}){
   const closeMenu = (e) =>{
     e.preventDefault()
@@ -33,19 +36,21 @@ export default function TopMenuBar({sectionName}){
   })
   }
 
-  const scrollToForm = (e) =>{
+  const scrollToContactForm = (e) =>{
     e.preventDefault()
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     let form = document.getElementsByClassName('contact-form')[0]
     form.setAttribute('style', 'display:block')
   }
+
+
   const scrollToAiArt=(e)=>{
     e.preventDefault()
     let aiArtCreator = document.getElementById('aiArt')
     aiArtCreator.scrollIntoView()
   }
-
+  // this is for when the page is on the landing site and not the mobile links 
   if(sectionName === 'landingPage'){
     return(
       <>
@@ -80,7 +85,7 @@ export default function TopMenuBar({sectionName}){
                     position: 'relative',
                   }}
                   >Carlos R. Cáceres Martínez </p>
-                  <Button variant="primary" className="nav-menu-button" onClick={(e)=>{scrollToForm(e)}}>Contact</Button>
+                  <Button variant="primary" className="nav-menu-button" onClick={(e)=>{scrollToContactForm(e)}}>Contact</Button>
                   <Button variant="primary" className="nav-menu-button" onClick={(e)=>{downloadResume(e)}}>Download Resume</Button>
                   {/* <Button variant="secondary" className="nav-menu-button" onClick={(e)=>{alert('Coming Soon!')}} >Ai Chat</Button> */}
                   <Button variant="primary" className="nav-menu-button" onClick={(e)=>{scrollToAiArt(e)}} >Create Ai Art</Button>
@@ -92,6 +97,7 @@ export default function TopMenuBar({sectionName}){
       </>
     )
   }
+  // This is for the mobile links
   else if(sectionName === 'mobileLinks'){
     return(
       <section className="topMenu-div section-background-light" style={{display: 'flex'}}>

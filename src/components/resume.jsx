@@ -1,3 +1,4 @@
+// This file holds the Resume section
 import React from "react";
 const resume = require('./files/Resume.pdf')
 
@@ -240,7 +241,7 @@ export default function Resume(){
                   <li className="c43 li-bullet-0"><span className="c6">CSS</span></li>
                 </ul>
                 <ul className="c7 lst-kix_9ys133z7aaj4-2 start">
-                  <li className="c12 li-bullet-0"><span className="c6">Boot-Strap & React Boot-Strap</span></li>
+                  <li className="c12 li-bullet-0"><span className="c6">BootStrap & React BootStrap</span></li>
                   <li className="c12 li-bullet-0"><span className="c6">Pure CSS</span></li>
                   <li className="c12 li-bullet-0"><span className="c6">Animate CSS </span></li>
                   <li className="c12 li-bullet-0"><span className="c6">TailWind CSS</span></li>

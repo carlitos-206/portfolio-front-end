@@ -1,3 +1,6 @@
+// This File holds the AI Images that are genereted by me
+
+// This are the 10 images
 import img_0 from "./img_0.png"
 import img_1 from "./img_1.png"
 import img_2 from "./img_2.png"
@@ -9,6 +12,7 @@ import img_7 from "./img_7.png"
 import img_8 from "./img_8.png"
 import img_9 from "./img_9.png"
 
+// this an array only containing the img src in order to facilitate the front end
 export const ai_imgs_only_list = [ // whenever changing the img ensure all lists are updated
     img_0,
     img_1,
@@ -22,6 +26,7 @@ export const ai_imgs_only_list = [ // whenever changing the img ensure all lists
     img_9
 ]
 
+// This is an array that holds the img src and prompt, this ensures that the prompt is match with the img
 export const ai_img_objects_list = [
   {
     img: img_0,

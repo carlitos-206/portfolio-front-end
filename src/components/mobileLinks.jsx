@@ -1,3 +1,5 @@
+// This is is the file for the mobile links page
+
 // REACT IMPORTS 
 import React from "react";
 
@@ -6,6 +8,8 @@ import Button from '@mui/material/Button';
 
 // COMPONENTS
 import { contactListFull } from "./images/contact/contactList";
+
+// This is the function that generates the buttons for the mobile links page
 export default function MobileLinksSection(){
   return(
     <div className="links-div" style={{

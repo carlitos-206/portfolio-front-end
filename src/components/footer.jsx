@@ -1,7 +1,11 @@
+// This file holds the footer for the site
+
 import React from "react";
+// BootStrap Imports
 import Carousel from 'react-bootstrap/Carousel';
 
 export default function Footer(){
+  // This is the array that holds the all the thank you in different languages
   const thank_you_array = [
     "धन्यवाद!", // Hindi
     "Merci!", // French

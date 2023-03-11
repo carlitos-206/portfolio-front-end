@@ -1,8 +1,10 @@
+// This file holds card from the img tile
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { ai_img_objects_list } from "./images/ai_imgs/ai_img_list";
 
+// This for when the card dispalays, it requires a idx as param
 export default function MyImgsCardBuilder({idx}){
   if(idx !== null){
     const closeCard = (e) =>{
