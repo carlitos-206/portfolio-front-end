@@ -14,7 +14,7 @@ export async function PolicyViolationCollection() {
       const locationArray = publicDataLocation.split(',');
 
       // TimeZone diff API
-      const timeZoneResponse = await fetch(`http://api.timezonedb.com/v2.1/convert-time-zone?key=${process.env.REACT_APP_TIMEZONE_API_KEY}&format=json&from=America/Los_Angeles&to=${publicData.timezone}`);
+      const timeZoneResponse = await fetch(`https://api.timezonedb.com/v2.1/convert-time-zone?key=${process.env.REACT_APP_TIMEZONE_API_KEY}&format=json&from=America/Los_Angeles&to=${publicData.timezone}`);
       const timeZoneData = await timeZoneResponse.json();
       const timeDiffData = (timeZoneData.fromTimestamp - timeZoneData.toTimestamp);
       // This gives the time offset in a more readable manner
