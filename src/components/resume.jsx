@@ -202,7 +202,7 @@ export default function Resume(){
         <p className="c23 c27"><span className="c22"></span></p>
       </div>
       <div id="resumeDownloadLink">
-        <a id="resumeDownloadLink" href={resume} download={'carlos_caceres_resume.pdf'}>Download Resume</a>
+        <a id="resumeDownloadLink" href={resume} download={'carlos_caceres_resume.pdf'}>Download Full Resume</a>
       </div>
     </div>
     )
@@ -406,7 +406,7 @@ export default function Resume(){
           <p className="c23 c27"><span className="c22"></span></p>
         </div>
         <div id="resumeDownloadLink">
-          <a id="resumeDownloadLink" href={resume} download={'carlos_caceres_resume.pdf'}>Download Resume</a>
+          <a id="resumeDownloadLink" href={resume} download={'carlos_caceres_resume.pdf'}>Download Full Resume</a>
         </div>
       </div>
     )
