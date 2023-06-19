@@ -9,7 +9,7 @@ import apigateway from './images/tech/apiGateway.jpg';
 import reactFirebase from './images/tech/reactFirebase.png';
 import mongo from './images/tech/mongodb.png';
 
-export default function Cube_2(){
+export default function CUBE_TWO(){
   const containerRef = useRef(null);
   
   useEffect(() => {

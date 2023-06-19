@@ -8,7 +8,8 @@ import lambda from './images/tech/lambda.png';
 import apigateway from './images/tech/apiGateway.jpg';
 import reactFirebase from './images/tech/reactFirebase.png';
 import mongo from './images/tech/mongodb.png';
-export default function Cube_1(){
+
+export default function CUBE_ONE(){
   const containerRef = useRef(null);
   
   useEffect(() => {
