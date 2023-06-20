@@ -33,7 +33,7 @@ export default function ChatContainer() {
         <div className="chat-container">
           <div className="chat-log" id="chat-log"></div>
             <div className="input-container">
-            <input type="text" id="user-input" placeholder="Ask Chat GPT a question about my resume" />
+            <input type="text" id="user-input" placeholder="Ask Chat GPT a question about me and/or my resume" />
             <button id="send-btn">Send</button>
           </div>
         </div>

@@ -20,6 +20,7 @@ import Resume from './components/resume';
 import VideoContainer from './components/vidContainer';
 import ChatContainer from './components/chatgpt';
 import Contact from "./components/contact"
+import Community from './components/community';
 // CSS 
 import './App.css';
 import AboutMe from './components/aboutMe';
@@ -42,6 +43,15 @@ function App() {
     )
   }
   
+  const AboutMePage = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <AboutMe />
+        <Footer />
+      </main>
+    )
+  }
   const ResumePage = () =>{
     return(
       <main>
@@ -53,15 +63,17 @@ function App() {
       </main>
     )
   }
-  const AboutMePage = () =>{
+
+  const CommunityPage = () =>{
     return(
       <main>
         <TopMenu />
-        <AboutMe />
+        <Community />
         <Footer />
       </main>
     )
   }
+
   const ContactPage = () =>{
     return(
       <main>
@@ -77,6 +89,7 @@ function App() {
         <Route path="/" element={ <LandingPage /> } />
         <Route path="/about" element={ <AboutMePage /> } />
         <Route path='/resume' element= { <ResumePage />} />
+        <Route path='/community' element= { <CommunityPage />} />
         <Route path='/contact' element = {<ContactPage />} />
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>

@@ -5,7 +5,7 @@
 }
 
 body {
-  /* background-color: black;
+  /* background-color: white;
   color: white; */
   
 
@@ -33,13 +33,13 @@ body {
 footer { 
   position: fixed;
   bottom: 0px;
-  background-color: #0d1a26;
+  background-color: rgb(52,58,64);
   width: 100%;
   display: flex;
   justify-content: center;
-  color: rgb(10, 83, 146);
+  color: white;
   height: 40px;
-  z-index: 5;
+  z-index: 6;
 
 }
 
@@ -55,14 +55,18 @@ footer {
 }
 
 
+.indent{
+  text-indent: 25px;
+}
 
 
+.dropdownNav{
+  z-index: +10;
+}
 
-
-
-
-
-
+.slick-next:before, .slick-prev:before {
+  color: #000;
+}
 
 
 
@@ -2370,7 +2374,7 @@ top: 500px;
     top: 550px;
     height: 50%;
     left: 50%;
-    z-index: 5;
+    z-index: 0;
     /* background-color: black; */
   }
 
@@ -2432,9 +2436,22 @@ top: 500px;
     display: flex;
     justify-content: center;
     left: 50%;
-    z-index: 6;
+    z-index: -1;
     /* background-color: black; */
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2448,14 +2465,75 @@ top: 500px;
 */
 
 .aboutContainer{
-  width: 45%;
+  width: 60%;
   position: relative;
-  top: 15px;
-  left: 50%;
+  top: 525px;
+  margin-bottom: 600px;
+  left: 20%;
+  z-index: -1;
 }
 .aboutParagraph{
-  margin: 2px;
+  margin: 12px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Community -----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+*/
+
+.communityContainer{
+  position: absolute;
+  width: 100%;
+  height: max-content;
+  top: 50px;
+  padding: 0px;
+  margin-bottom: 200px;
+}
+.hackathonHeader{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.carouselContainer{
+  margin-bottom: 100px ;
+  /* background-color: #000; */
+  width: 360px;
+}
+.carouselImageContainer{
+  width: min-content;
+}
+.conatinerCara{
+  width: 200px;
+}
+.carouselImg{
+  width: 360px;
+}
+
+
+
+
+
+
 
 
 
@@ -2491,7 +2569,7 @@ top: 500px;
 }
 .contactReasonContainer{
   position: relative;
-  left: 20%
+  left: 10%
 }
 .contactSubmitBtn{
   position: relative;
@@ -2526,6 +2604,18 @@ top: 500px;
   height: 49px;
   transform: scale(1.2)
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3587,7 +3677,7 @@ margin-top:0px ;
 position: relative;
 top: -40px;
 display: inline;
-z-index: 3;
+z-index: -2;
 transform: scale(5);
 
 
@@ -3598,8 +3688,8 @@ display: flex;
 justify-content: center;
 position: absolute;
 top: 100%;
-right: 15%;
-z-index: 4;
+width: 50%;
+z-index: 0;
 
 }
 

@@ -51,7 +51,7 @@ export default function Contact() {
                   <Form.Control type="email" placeholder="name@example.com" required/>
               </Form.Group>
               <Form.Group className="mb-3 contactMessageBox" controlId="exampleForm.ControlTextarea1">
-                  <Form.Control as="textarea" rows={5} cols={50} required placeholder="Write me a message ... "/>
+                  <Form.Control as="textarea" rowSpan={5} colSpan={50} required placeholder="Write me a message ... "/>
               </Form.Group>
               <Form.Group className="mb-3 contactReasonContainer">
                 <p>Reason for Connection</p>
@@ -71,7 +71,7 @@ export default function Contact() {
             <img className="contactHeadshot" src={headshot} alt="Profile"/>
             <Button className="externalButtons" variant="outline-primary" href="https://www.linkedin.com/in/carlitos206/"><img className="connectionIcons linkedInIcon"src={linkin} alt="LinkedIn" /></Button>
             <Button className="externalButtons" variant="outline-primary" href="https://github.com/carlitos-206"><img className="connectionIcons linkedInIcon"src={github} alt="GitHub" /></Button>
-            <Button id="youtubeBtn" className="externalButtons" variant="outline-primary" href="https://github.com/carlitos-206"><img className="connectionIcons youtubeIcon"src={youtube} alt="YouTube" /></Button>
+            <Button id="youtubeBtn" className="externalButtons" variant="outline-primary" href="https://www.youtube.com/channel/UCfJtIgTcGEX_D0TLjFi-COQ"><img className="connectionIcons youtubeIcon"src={youtube} alt="YouTube" /></Button>
             <Button className="externalButtons emailBtn" variant="outline-primary" href="mailto:carloscaceres041@gmail.com" >Send Email</Button>
           </div>
         </div>
