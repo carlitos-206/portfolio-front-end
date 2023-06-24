@@ -13,7 +13,9 @@ export default function CarouselBuilder({images}) {
     slidesToShow: 1,
     slidesToScroll:1,
     centerMode: true,
-    centerPadding: "0px"
+    centerPadding: "0px",
+    arrows: false,
+    autoplay: true,
   };
 
   return (
@@ -23,7 +25,7 @@ export default function CarouselBuilder({images}) {
           images.map((image, index) => { 
             return(
               <div className="conatinerCara">
-                <div className="carouselImageContainer shadow slide-item transition-all" id={index}>
+                <div className="carouselImageContainer slide-item transition-all" id={index}>
                   <img className="carouselImg" src={image.img} alt="carouselImage" />
                 </div>
               </div>
