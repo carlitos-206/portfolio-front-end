@@ -4,7 +4,7 @@ import React from 'react';
 
 
 // NPM PACKAGES
-import {  Routes, Route , Navigate } from 'react-router-dom'
+import {  Routes, Route } from 'react-router-dom'
 
 
 
@@ -21,6 +21,9 @@ import VideoContainer from './components/vidContainer';
 import ChatContainer from './components/chatgpt';
 import Contact from "./components/contact"
 import Community from './components/community';
+import HackSea from './components/hackSea';
+import AiHackathon2 from './components/aiHackathon2';
+import AiHackathon3 from './components/aiHackathon3';
 // CSS 
 import './App.css';
 import AboutMe from './components/aboutMe';
@@ -73,7 +76,33 @@ function App() {
       </main>
     )
   }
-
+  const HackSeaPage = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <HackSea />
+        <Footer />
+      </main>
+    )
+  }
+  const AiHackacthon2Page = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <AiHackathon2 />
+        <Footer />
+      </main>
+    )
+  }
+  const AiHackathon3Page = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <AiHackathon3 />
+        <Footer />
+      </main>
+    )
+  }
   const ContactPage = () =>{
     return(
       <main>
@@ -90,8 +119,11 @@ function App() {
         <Route path="/about" element={ <AboutMePage /> } />
         <Route path='/resume' element= { <ResumePage />} />
         <Route path='/community' element= { <CommunityPage />} />
+        <Route path='/community/hackathon/AiHackathon2_0atSURFIncubator' element= { <AiHackacthon2Page />} />
+        <Route path='/community/hackathon/AiHackathon3_0atSURFIncubator' element= { <AiHackathon3Page />} />
+        <Route path='/community/hackathon/HackSeaAtAmazon' element= { <HackSeaPage />} />
         <Route path='/contact' element = {<ContactPage />} />
-        <Route path='*' element={<Navigate to='/' />} />
+        {/* <Route path='*' element={<Navigate to='/' />} /> */}
       </Routes>
     </div>
   );

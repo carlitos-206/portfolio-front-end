@@ -24,7 +24,7 @@ export default function CarouselBuilder({images}) {
         {
           images.map((image, index) => { 
             return(
-              <div className="conatinerCara">
+              <div className="conatinerCara" key={index}>
                 <div className="carouselImageContainer slide-item transition-all" id={index}>
                   <img className="carouselImg" src={image.img} alt="carouselImage" />
                 </div>

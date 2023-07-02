@@ -59,6 +59,7 @@ export default function Contact() {
                   <option value="other" selected disabled hidden> Select a reason </option>
                   <option value="hiring">Hiring</option>
                   <option value="collaboration">Collaboration</option>
+                  <option value="coaching">Coaching</option>
                   <option value="other">Other</option>
                 </Form.Select>
               </Form.Group>

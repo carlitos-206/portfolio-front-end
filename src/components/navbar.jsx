@@ -23,7 +23,7 @@ export default function TopMenu() {
               // overflowY: "scroll",
             }}title="Projects" id="navbarScrollingDropdown" className="dropdownNav">
             {/* <NavDropdown.Divider /> */}
-            <h6 style={{marginLeft: "15px"}}>🔴 Live | * Only on desktop | <img className="gitNavbarLogo" src={github} alt="GitHub Link" /></h6>
+            <h6 style={{marginLeft: "15px"}}>🔴 Live | * Only on desktop | <a href="https://github.com/carlitos-206"><img className="gitNavbarLogo" src={github} alt="GitHub Link" /></a></h6>
             <NavDropdown.Divider />
               <h6 style={{marginLeft: "15px",}}>Top Personal Projects:</h6>
               <NavDropdown.Item href="#action/3.4">
@@ -40,6 +40,9 @@ export default function TopMenu() {
               </NavDropdown.Item>
               <NavDropdown.Item href="/resume">
               🔴 Open Ai: ChatGPT Resume QA
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action">
+              <h6 style={{marginLeft: "15px"}}>View more personal projects</h6>
               </NavDropdown.Item>
             <NavDropdown.Divider />
               <h6 style={{marginLeft: "15px"}}>University of Wa. Projects</h6>
