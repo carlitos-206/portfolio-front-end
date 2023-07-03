@@ -221,6 +221,14 @@ export const coaching = [
 export const people = [
   {
     id: 0,
+    projects:["l4y"],
+    title: "andrea",
+    name: "Andrea Aguilera",
+    img: andrea,
+    linkedin: "https://www.linkedin.com/in/andrea-aguilera9/"
+  },
+  {
+    id: 1,
     projects:["seratonics", "vcs", "l4y"],
     title: "sam",
     name: "Shuaib Ahamed",
@@ -228,20 +236,12 @@ export const people = [
     linkedin: "https://www.linkedin.com/in/shuaib-ahamed-194384238/",
   },
   {
-    id: 1,
+    id: 2,
     projects:["seratonics", "vcs", "l4y"],
     title: "stuart",
     name: "Stuart Boekelman",
     img: stuart,
     linkedin: "https://www.linkedin.com/in/stuarrt-boekelman-a6552a135/"
-  },
-  {
-    id: 2,
-    projects:["l4y"],
-    title: "andrea",
-    name: "Andrea Aguilera",
-    img: andrea,
-    linkedin: "https://www.linkedin.com/in/andrea-aguilera9/"
   },
   {
     id: 3,
@@ -255,7 +255,7 @@ export const people = [
     id: 4,
     projects:["seratonics"],
     title: "angel",
-    name: "Angel lastName",
+    name: "Angel G.",
     img: angel,
     linkedin:"https://www.linkedin.com/"
   },

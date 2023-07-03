@@ -60,6 +60,7 @@ export default function Contact() {
                   <option value="hiring">Hiring</option>
                   <option value="collaboration">Collaboration</option>
                   <option value="coaching">Coaching</option>
+                  <option value="invite">Invite</option>
                   <option value="other">Other</option>
                 </Form.Select>
               </Form.Group>

@@ -2601,7 +2601,7 @@ top: 500px;
   /* background-color: #1155cc; */
   width: 50%;
   height: min-content;
-  margin-left: 40px;
+  margin-left: 20px;
   font-size: 18px;
 }
 .carouselContainer{
@@ -2619,6 +2619,39 @@ top: 500px;
   width: 360px;
 }
 
+.coachingContainer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: min-content;
+}
+.coachingMedia{
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.coachVid{
+  position: relative;
+  left: 50px ;
+}
+.cheriRecomenation_community{
+  width: 760px;
+  position: relative;
+  top: 25px;
+}
+.cheriMoreCommunity{
+  position: relative;
+  top: 45%;
+  /* background-color: #000; */
+  left: 75%;
+  width: fit-content;
+  z-index: 4;
+  padding: 5px;
+}
+.carouselImg_coaching{
+  width: 400px;
+}
 .communityProjectReadMoreBtns{
   display: flex;
   position: relative;
@@ -2629,19 +2662,30 @@ top: 500px;
   position: relative;
   margin-right:60px ;
 }
-.readMoreCommunityBtn{
-  display: flex;
+.techEventsContainer{
   position: relative;
-  top: 20px;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
+  height: min-content;
 }
+.techEventMedia{
+  position: relative;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction:column ;
+}
+.techEventImg{
+  width: 80%;
 
+  margin: 5px 10% 0px 10% ;
+}
 .externalCommunityBtn{
   /* background-color: #000; */
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 40px;
+  margin: 40px;
 }
 
 
@@ -2877,12 +2921,12 @@ background-color:#f8f8f8;
   height: 250px;
 
 }
-#teamPic_3{
+#teamPic_3_seratonics{
   position: relative;
   height: 250px;
   overflow: hidden;
 }
-#teamPic_4{
+#teamPic_4_seratonics{
   position: relative;
   height: 250px;
   overflow: hidden;
@@ -3107,8 +3151,23 @@ _te
 ---------------------------------------------------------------------------------------------
 */
 
-
-
+.learning4youBack{
+  position: absolute;
+  position: fixed;
+  top: 100px;
+  left: 5px;
+  z-index: 6;
+  /* background-color: #000; */
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.l4yATagBack{
+  color: #000;
+  font-family: Merriweather;
+  text-decoration: none;
+  font-size: 14px;
+}
 .invisibleSpace{
   background-color: white;
   color: white;
@@ -3136,8 +3195,9 @@ _te
 }
 
 .learning4youText{
+  font-size: 18px;
   font-family:  Merriweather; 
-  padding: 1% 2% 2% 2%;
+  padding: 2% 2% 2% 4%;
   width: 50%;
 }
 .learning4youPPT{
@@ -3145,6 +3205,28 @@ _te
   width: 50%;
   height: 590px;
   padding: 0% 2% 2% 0%;
+  position: relative;
+  top: 50px;
+  
+}
+.aihack3_media_titles{
+  position: relative;
+  font-size: 16px;
+  font-family: Merriweather;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.aiHack3YTVid{
+  width: 100%;
+  z-index: +6;
+}
+
+.teamTitle_l4y{
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-family: Merriweather;
 }
 
 .learning4youMedia{
@@ -3155,7 +3237,17 @@ _te
   
 }
 
+.teamL4Y{
+  width: 100%;
+  position: relative;
 
+}
+
+.teamPic_l4y{
+  margin: 10px;
+  width: 250px;
+  border-radius: 50%;
+}
 /* Special Heading */
 
 .h1_sixth { position: relative; }
@@ -3181,6 +3273,32 @@ _te
 .h1_sixth:hover:after { 
 	transform: translateX(30px);
 }
+
+
+.h1_sixth_back { position: relative; }
+
+.h1_sixth_back:before,
+.h1_sixth_back:after {
+	content: '[';
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	height: 100%;
+	color: tomato;
+	
+	transition: all 0.5s ease;
+}
+
+.h1_sixth_back:after { content: ']'; }
+
+.h1_sixth_back:hover:before { 
+	transform: translateX(-5px);
+}
+
+.h1_sixth_back:hover:after { 
+	transform: translateX(5px);
+}
+
 
 
 

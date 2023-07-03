@@ -3,10 +3,15 @@ import { people } from "./community/communityCollection";
 // import CarouselBuilder from "./carouselBuilder";
 import TeamCardBuilder from "./teamCardBuilder";
 export default function AiHackathon3() {
+  const linkOfTheWebsiteUserCame = document.referrer
+  console.log(linkOfTheWebsiteUserCame)
+
+
   return (
     <>
-    <div className="vcscoutBack">
-          <a href="/community" className="h1_sixth">Back</a>
+    <div className="learning4youBack">
+          <a href="/community" className="h1_sixth_back l4yATagBack">"Back"</a>
+          {/* <a className="h1_sixth_back l4yATagBack"href="#test">"Next"</a> */}
       </div>
       <p className="learnHeading h1_sixth">"Ai Hackathon 3.0 @ SURF Incubator hosted by <p className="invisibleSpace">-</p> <a href="https://leanerstartups.com/" target="_blank" rel="noreferrer"> Leaner Startups</a>"</p>
       {/* create loop and autmation add this to url endpoint: start=true&loop=true&delayms=3000 */}
@@ -24,16 +29,18 @@ export default function AiHackathon3() {
           <p className="indent">In that spirit, I can't wait for the next hackathon, and the opportunity to grow, learn, and innovate once more.</p>
           </div>
         <div className="learning4youPPT">
+          <p className="h1_sixth_back aihack3_media_titles">"Google Slides"</p>
           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTN7d5RfHulpovjZslFBkyF5Z8stlDQQgIi45XCIrE_vm7OnyfPDNXuzTBOVBXHDem_-wKldJyTiIQH/embed?start=true&loop=true&delayms=3500" frameborder="0" width="100%" height="100%" allowfullscreen="true"  title='Learn 4 You Slides' mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <p className="h1_sixth_back aihack3_media_titles">"Semifinal Round Q&A"</p>
+          <iframe className="aiHack3YTVid" width="100%" height="100%" src="https://www.youtube.com/embed/0ZM2fdbQb7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
         <div className="learning4youMedia">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0ZM2fdbQb7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <div className="teamVCScout">
-                  <div className="teamTitle_vcs">
-                    <p className="vc_second_team vc_span vc_span_second">Team Members</p>
+          <div className="teamL4Y">
+                  <div className="teamTitle_l4y">
+                    <p className="h1_sixth_back">"Team Members"</p>
                   </div>
-                  <TeamCardBuilder filter='l4y' team={people}/>
+                    <TeamCardBuilder filter='l4y' team={people}/>
                 </div>
         </div>
     </>

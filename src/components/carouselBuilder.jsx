@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export default function CarouselBuilder({images}) {
-  console.log(images)
   const settings = {
     dots: false,
     infinite: true,

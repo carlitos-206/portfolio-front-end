@@ -24,7 +24,9 @@ export default function TopMenu() {
             }}title="Projects" id="navbarScrollingDropdown" className="dropdownNav">
             {/* <NavDropdown.Divider /> */}
             <h6 style={{marginLeft: "15px"}}>🔴 Live | * Only on desktop | <a href="https://github.com/carlitos-206"><img className="gitNavbarLogo" src={github} alt="GitHub Link" /></a></h6>
-            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action">
+                <h6 >View all projects</h6>
+                </NavDropdown.Item>
               <h6 style={{marginLeft: "15px",}}>Top Personal Projects:</h6>
               <NavDropdown.Item href="#action/3.4">
               🔴 Portfolio Site
@@ -44,7 +46,6 @@ export default function TopMenu() {
               <NavDropdown.Item href="#action">
               <h6 style={{marginLeft: "15px"}}>View more personal projects</h6>
               </NavDropdown.Item>
-            <NavDropdown.Divider />
               <h6 style={{marginLeft: "15px"}}>University of Wa. Projects</h6>
               <NavDropdown.Item href="#action/3.4">
               🔴 Group Project: Washington Wildfires Community
