@@ -64,7 +64,9 @@ footer {
   text-indent: 25px;
 }
 
-
+.boldFont{
+ font-weight: 900;
+}
 .dropdownNav{
   z-index: +10;
 }
@@ -2395,95 +2397,6 @@ top: 500px;
     overflow: hidden;
   }
 
-/* Chat Container */
-  .chatContainer{
-    /* border: solid 1px red; */
-    position: absolute;
-    width: 50%;
-    top: 550px;
-    height: 50%;
-    left: 50%;
-    z-index: 0;
-    /* background-color: black; */
-  }
-
-  .chatHeader{
-    /* border: solid 1px red; */
-    position: relative;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    /* font-weight: bold; */
-  }
-
-  .chat-container {
-    width: 100%;
-    height: 400px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    overflow-y: scroll;
-  }
-  
-  .chat-log {
-    height: 80%;
-    margin-bottom: 10px;
-  }
-  
-  .input-container {
-    display: flex;
-  }
-  
-  #user-input {
-    flex-grow: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  #send-btn {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  #send-btn:hover {
-    background-color: #45a049;
-  }
-/* Video Container */
-  .vidContainer{
-    /* border: solid 1px red; */
-    position: absolute;
-    top:100px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    left: 50%;
-    z-index: -1;
-    /* background-color: black; */
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2507,9 +2420,61 @@ top: 500px;
 
 
 
+/* Projects -----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+*/
 
 
+/* Personal-Portfolio -----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+*/
 
+.portfolioHeader{
+  position: relative;
+  top: 80px;
+  /* background-color: #1155cc; */
+  display: flex;
+  justify-content: center;
+  font-family: Merriweather;
+  font-size: 32px;
+  padding: 0 25px 0 25px;
+  font-weight: 300;
+  /* text-shadow: 3px 2px #558ABB; */
+}
+
+.portfolioContainer{
+  /* background-color: #a42d2d; */
+  position: relative;
+  top: 80px;
+  padding: 3%;
+  margin-bottom: 130px;
+  display: flex;
+}
+
+.portfolioArticle{
+  width: 50%;
+  font-family: Merriweather;
+  font-size: 18px;
+}
+
+.portfolioSections{
+  margin-bottom: 40px;
+}
+
+.portfolioMedia{
+  width: 50%;
+  padding: 0 3% 0 3%;
+  /* background-color: #000; */
+}
+
+.portfolioVideo{
+  height: 400px;
+  padding: 5% 0 0 0;
+}
 
 
 
@@ -2638,11 +2603,11 @@ top: 500px;
 .cheriRecomenation_community{
   width: 760px;
   position: relative;
-  top: 25px;
+  top: -25px
 }
 .cheriMoreCommunity{
   position: relative;
-  top: 45%;
+  top: 25%;
   /* background-color: #000; */
   left: 75%;
   width: fit-content;
@@ -2670,15 +2635,14 @@ top: 500px;
 }
 .techEventMedia{
   position: relative;
-  width: 25%;
+  width: fit-content;
   display: flex;
   justify-content: center;
   flex-direction:column ;
 }
 .techEventImg{
-  width: 80%;
-
-  margin: 5px 10% 0px 10% ;
+  width: 390px;
+  margin: 20px 0px 5px 0px;
 }
 .externalCommunityBtn{
   /* background-color: #000; */
@@ -3411,6 +3375,112 @@ _te
 ------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------
 */
+
+
+/* CUSTOME HTML */
+
+/* Chat Container */
+.chatContainer{
+  position: absolute;
+  width: 50%;
+  top: 520px;
+  height: 50%;
+  left: 50%;
+  z-index: 0;
+  margin: 0px 0px 50px ;
+  padding: 2px;
+}
+
+.chatHeader{
+  /* border: solid 1px red; */
+  position: relative;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-right:15px ;
+  /* font-weight: bold; */
+}
+
+.chat-container {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.chat-log {
+  height: 80%;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#send-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background-color: #45a049;
+}
+/* Video Container */
+.vidContainer{
+  /* border: solid 1px red; */
+  position: absolute;
+  top:100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  z-index: 5;
+  /* background-color: black; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GOOGLE HTML */
   @import url('https://themes.googleusercontent.com/fonts/css?kit=RFda8w1V0eDZheqfcyQ4EGb3DKsRMD34dqg1gT8Z-p6isjtAVhoKeKPV_uAAgBOSk3k702ZOKiLJc3WVjuplzDj3qlxvkMVt2Q_AbZj4pHw');
 
 .lst-kix_d52h1clnbs3c-5>li:before {
@@ -4466,17 +4536,21 @@ top: -40px;
 display: inline;
 z-index: -2;
 transform: scale(5);
+margin-bottom: 200px;
 
 
 }
 #resumeDownloadLink{
 /* background-color: #000; */
 display: flex;
-justify-content: center;
-position: absolute;
-top: 100%;
-width: 50%;
-z-index: 0;
+justify-content: flex-start;
+left: 25%;
+width: fit-content;
+position: relative;
+top: -50px;
+/* top: 95%; */
+/* width: 50%; */
+z-index: 6 ;
 
 }
 

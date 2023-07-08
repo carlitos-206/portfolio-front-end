@@ -16,6 +16,8 @@ import Footer from './components/footer';
 import CUBE_ZERO from './components/cube_0';
 import CUBE_ONE from './components/cube_1';
 import CUBE_TWO from './components/cube_2';
+import AboutMe from './components/aboutMe';
+import PortfolioPage from './components/portfolio';
 import Resume from './components/resume';
 import VideoContainer from './components/vidContainer';
 import ChatContainer from './components/chatgpt';
@@ -26,7 +28,6 @@ import AiHackathon2 from './components/aiHackathon2';
 import AiHackathon3 from './components/aiHackathon3';
 // CSS 
 import './App.css';
-import AboutMe from './components/aboutMe';
 
 
 
@@ -55,6 +56,16 @@ function App() {
       </main>
     )
   }
+  const ProjectsPagePersonalPortfolio = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <PortfolioPage />
+        <Footer />
+      </main>
+    )
+  }
+
   const ResumePage = () =>{
     return(
       <main>
@@ -117,6 +128,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <LandingPage /> } />
         <Route path="/about" element={ <AboutMePage /> } />
+        <Route path='/projects/personal/portfolio' element= { <ProjectsPagePersonalPortfolio />} />
         <Route path='/resume' element= { <ResumePage />} />
         <Route path='/community' element= { <CommunityPage />} />
         <Route path='/community/hackathon/AiHackathon2_0atSURFIncubator' element= { <AiHackacthon2Page />} />

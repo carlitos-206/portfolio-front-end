@@ -395,7 +395,7 @@ export default function Resume(){
         </div>
       </div>
       <div id="resumeDownloadLink">
-          <a id="resumeDownloadLink" href={resume} download={'carlos_caceres_resume.pdf'}>Download Full Resume</a>
+          <a href={resume} download={'carlos_caceres_resume.pdf'}>Download Full Resume</a>
         </div>
       </>
     )

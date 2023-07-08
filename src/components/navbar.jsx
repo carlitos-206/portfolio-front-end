@@ -23,16 +23,13 @@ export default function TopMenu() {
               // overflowY: "scroll",
             }}title="Projects" id="navbarScrollingDropdown" className="dropdownNav">
             {/* <NavDropdown.Divider /> */}
-            <h6 style={{marginLeft: "15px"}}>🔴 Live | * Only on desktop | <a href="https://github.com/carlitos-206"><img className="gitNavbarLogo" src={github} alt="GitHub Link" /></a></h6>
-            <NavDropdown.Item href="#action">
-                <h6 >View all projects</h6>
-                </NavDropdown.Item>
-              <h6 style={{marginLeft: "15px",}}>Top Personal Projects:</h6>
-              <NavDropdown.Item href="#action/3.4">
+            <h6 style={{marginLeft: "5px", color: "black", padding: '0 10% 0 10%'}}>🔴 Live | * Only on desktop | <a href="https://github.com/carlitos-206"><img className="gitNavbarLogo" src={github} alt="GitHub Link" /></a></h6>
+              <h6 style={{marginLeft: "15px", color: "black"}}>Top Personal Projects:</h6>
+              <NavDropdown.Item href="/projects/personal/portfolio">
               🔴 Portfolio Site
               </NavDropdown.Item>
               <NavDropdown.Item href="#action">
-              🔴 Open Ai API interface
+              🔴 OpenAI API interface
               </NavDropdown.Item>
               <NavDropdown.Item href="#action">
                 Whisper Ai Translator App
@@ -41,12 +38,10 @@ export default function TopMenu() {
               🔴 Browser Data Collection
               </NavDropdown.Item>
               <NavDropdown.Item href="/resume">
-              🔴 Open Ai: ChatGPT Resume QA
+              🔴 OpenAI: ChatGPT Resume QA
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action">
-              <h6 style={{marginLeft: "15px"}}>View more personal projects</h6>
-              </NavDropdown.Item>
-              <h6 style={{marginLeft: "15px"}}>University of Wa. Projects</h6>
+              
+              <h6 style={{marginLeft: "15px", color: "black"}}>University of Wa. Projects</h6>
               <NavDropdown.Item href="#action/3.4">
               🔴 Group Project: Washington Wildfires Community
               </NavDropdown.Item>
@@ -57,7 +52,7 @@ export default function TopMenu() {
               *🔴 Solo Project: JS Portfolio
               </NavDropdown.Item>
             <NavDropdown.Divider />
-              <h6 style={{marginLeft: "15px"}}> Coding Dojo Projects:</h6>
+              <h6 style={{marginLeft: "15px", color: "black"}}> Coding Dojo Projects:</h6>
               <NavDropdown.Item href="#action/3.4">
                 Group Project: Music Groups App
               </NavDropdown.Item>
