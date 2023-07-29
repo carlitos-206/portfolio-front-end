@@ -66,6 +66,16 @@ function App() {
     )
   }
 
+  const ProjectsPageOpenAiInterface = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <Footer />
+      </main>
+    )
+  }
+
+
   const ResumePage = () =>{
     return(
       <main>
@@ -129,6 +139,7 @@ function App() {
         <Route path="/" element={ <LandingPage /> } />
         <Route path="/about" element={ <AboutMePage /> } />
         <Route path='/projects/personal/portfolio' element= { <ProjectsPagePersonalPortfolio />} />
+        <Route path='/projects/personal/openai_interface' element= { <ProjectsPageOpenAiInterface />} />
         <Route path='/resume' element= { <ResumePage />} />
         <Route path='/community' element= { <CommunityPage />} />
         <Route path='/community/hackathon/AiHackathon2_0atSURFIncubator' element= { <AiHackacthon2Page />} />

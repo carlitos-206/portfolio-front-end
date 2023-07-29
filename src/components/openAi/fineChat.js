@@ -23,13 +23,13 @@ export async function chatConnect(prompt){
 }
 
 export const callPythonLambda = async (option, prompt) =>{
-const rawResponse = await fetch(`` , {
+const rawResponse = await fetch(`https://2jh3oz01gh.execute-api.us-west-2.amazonaws.com/default/` , {
 method: 'POST',
-// mode: 'no-cors',
 headers: {
 'Accept': 'application/json',
-'Content-Type': 'application/json',  
-// 'Prompt': prompt
+'Content-Type': 'application/json', 
+'Origin': 'http://localhost:3000',
+'Prompt': prompt
 },
 });
 const content = await rawResponse.json();

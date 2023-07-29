@@ -28,7 +28,7 @@ export default function TopMenu() {
               <NavDropdown.Item href="/projects/personal/portfolio">
               🔴 Portfolio Site
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action">
+              <NavDropdown.Item href="/projects/personal/openai_interface">
               🔴 OpenAI API interface
               </NavDropdown.Item>
               <NavDropdown.Item href="#action">
