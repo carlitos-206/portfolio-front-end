@@ -2507,17 +2507,34 @@ top: 500px;
         left: 5%;
       }
       .OpenAi_tools_containter{
-        /* position: relative; */
-        background-color: #000;
+        position: relative;
+        background-color: green;
         width: 100%;
-        border: solid 5px red;
-        /* position: relative; */
+        border: solid 1px red;
+        top: 840px;
       }
 
 
+      .project_chatContainer{
+        width: 50%;
+        top: 520px;
+        height: 50%;
+        left: 50%;
+        z-index: 0;
+        margin: 0px 0px 50px ;
+        padding: 2px;
+      }
 
-
-
+      .project_chatHeader{
+        /* border: solid 1px red; */
+        position: relative;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        margin-right:15px ;
+        width: 100%;
+      }
 
 
 
