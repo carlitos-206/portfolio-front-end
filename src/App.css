@@ -2427,59 +2427,92 @@ top: 500px;
 */
 
 
-/* Personal-Portfolio -----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------
-*/
+      /* Personal-Portfolio -----------------------------------------------------------------------------------
+      ----------------------------------------------------------------------------------------------
+      ------------------------------------------------------------------------------------------------
+      ---------------------------------------------------------------------------------------------
+      */
+      
+      .portfolioHeader{
+        position: relative;
+        top: 80px;
+        /* background-color: #1155cc; */
+        display: flex;
+        justify-content: center;
+        font-family: Merriweather;
+        font-size: 32px;
+        padding: 0 25px 0 25px;
+        font-weight: 300;
+        /* text-shadow: 3px 2px #558ABB; */
+      }
+      
+      .portfolioContainer{
+        /* background-color: #a42d2d; */
+        position: relative;
+        top: 80px;
+        padding: 3%;
+        margin-bottom: 130px;
+        display: flex;
+      }
+      
+      .portfolioArticle{
+        width: 50%;
+        font-family: Merriweather;
+        font-size: 18px;
+      }
+      
+      .portfolioSections{
+        margin-bottom: 40px;
+      }
+      
+      .portfolioMedia{
+        width: 50%;
+        padding: 0 3% 0 3%;
+        /* background-color: #000; */
+      }
+      
+      .portfolioVideo{
+        height: 400px;
+        padding: 5% 0 0 0;
+      }
 
-.portfolioHeader{
-  position: relative;
-  top: 80px;
-  /* background-color: #1155cc; */
-  display: flex;
-  justify-content: center;
-  font-family: Merriweather;
-  font-size: 32px;
-  padding: 0 25px 0 25px;
-  font-weight: 300;
-  /* text-shadow: 3px 2px #558ABB; */
-}
-
-.portfolioContainer{
-  /* background-color: #a42d2d; */
-  position: relative;
-  top: 80px;
-  padding: 3%;
-  margin-bottom: 130px;
-  display: flex;
-}
-
-.portfolioArticle{
-  width: 50%;
-  font-family: Merriweather;
-  font-size: 18px;
-}
-
-.portfolioSections{
-  margin-bottom: 40px;
-}
-
-.portfolioMedia{
-  width: 50%;
-  padding: 0 3% 0 3%;
-  /* background-color: #000; */
-}
-
-.portfolioVideo{
-  height: 400px;
-  padding: 5% 0 0 0;
-}
-
-
-
-
-
+      /* Personal-OpenAI Interface -----------------------------------------------------------------------------------
+      ----------------------------------------------------------------------------------------------
+      ------------------------------------------------------------------------------------------------
+      ---------------------------------------------------------------------------------------------
+      */
+      .openAiArticleContainer{
+        margin-bottom: 550px;
+      }
+      .openAiArticle_title{
+        /* background-color: #000; */
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+        font-family: sans-serif;
+        background-image: linear-gradient(to right, #553c9a 45%, #ee4b2b);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+      .openAiArticle_body{
+        position: absolute;
+        top: 140px;
+        font-size: 24px;
+        /* background-color: red; */
+        width: 90%;
+        left: 5%;
+      }
+      .OpenAi_tools_containter{
+        /* position: relative; */
+        background-color: #000;
+        width: 100%;
+        border: solid 5px red;
+        /* position: relative; */
+      }
 
 
 

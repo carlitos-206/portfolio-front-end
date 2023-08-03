@@ -11,21 +11,38 @@ import {  Routes, Route } from 'react-router-dom'
 
 
 // COMPONENTS 
-import TopMenu from './components/global_components/navbar';
-import Footer from './components/global_components/footer';
-import CUBE_ZERO from './components/section_landing/cube_0';
-import CUBE_ONE from './components/section_landing/cube_1';
-import CUBE_TWO from './components/section_landing/cube_2';
-import AboutMe from './components/section_aboutMe/aboutMe';
-import PortfolioPage from './components/section_projects/portfolio';
-import Resume from './components/section_resume/resume';
-import VideoContainer from './components/vidContainer';
-import ChatContainer from './components/section_resume/aws_chatgpt_interface';
-import Contact from "./components/section_contact/contact"
-import Community from './components/section_community/community';
-import HackSea from './components/section_community/hackSea';
-import AiHackathon2 from './components/section_community/aiHackathon2';
-import AiHackathon3 from './components/section_community/aiHackathon3';
+
+  // Global Components
+    import TopMenu from './components/global_components/navbar';
+    import Footer from './components/global_components/footer';
+    import VideoContainer from './components/vidContainer';
+
+  // Landing Page Components
+    import CUBE_ZERO from './components/section_landing/cube_0';
+    import CUBE_ONE from './components/section_landing/cube_1';
+    import CUBE_TWO from './components/section_landing/cube_2';
+
+  // About Me Section
+    import AboutMe from './components/section_aboutMe/aboutMe';
+
+  // Projects Section
+    import PortfolioPage from './components/section_projects/portfolio/portfolio';
+    import OpenAIArticle from './components/section_projects/openAi_interface/openAI_interface';
+
+  // Resume Section
+    import Resume from './components/section_resume/resume';
+    import ChatContainer from './components/section_resume/aws_chatgpt_interface';
+
+  // Community Section
+    import Community from './components/section_community/community';
+    import HackSea from './components/section_community/hackSea';
+    import AiHackathon2 from './components/section_community/aiHackathon2';
+    import AiHackathon3 from './components/section_community/aiHackathon3';
+
+
+  // Contact Section
+    import Contact from "./components/section_contact/contact"
+
 // CSS 
 import './App.css';
 
@@ -70,6 +87,7 @@ function App() {
     return(
       <main>
         <TopMenu />
+        <OpenAIArticle />
         <Footer />
       </main>
     )
