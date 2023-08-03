@@ -1,10 +1,10 @@
 import React from "react";
-import { seaHack, aiHack2, aiHack3, techEvent } from "./community/communityCollection";
-import cheriRecomendation from "./community/coaching/professorTestimony.png";
+import { seaHack, aiHack2, aiHack3, techEvent } from "../community/communityCollection";
+import cheriRecomendation from "../community/coaching/professorTestimony.png";
 import CarouselBuilder from "./carouselBuilder";
 import Button from 'react-bootstrap/Button';
-import linkin from './images/contact/linkedin.png';
-import youtube from './images/contact/youtube.png';
+import linkin from '../images/contact/linkedin.png';
+import youtube from '../images/contact/youtube.png';
 
 
 

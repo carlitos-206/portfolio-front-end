@@ -1,5 +1,5 @@
 import React from "react";
-import apiGatewayLogo from "./images/tech/awsAPIGateway.png"
+import apiGatewayLogo from "../images/tech/awsAPIGateway.png"
 import axios from "axios";
 
 export default function ChatContainer() {

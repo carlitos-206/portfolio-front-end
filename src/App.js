@@ -11,21 +11,21 @@ import {  Routes, Route } from 'react-router-dom'
 
 
 // COMPONENTS 
-import TopMenu from './components/navbar';
-import Footer from './components/footer';
-import CUBE_ZERO from './components/cube_0';
-import CUBE_ONE from './components/cube_1';
-import CUBE_TWO from './components/cube_2';
-import AboutMe from './components/aboutMe';
-import PortfolioPage from './components/portfolio';
-import Resume from './components/resume';
+import TopMenu from './components/global_components/navbar';
+import Footer from './components/global_components/footer';
+import CUBE_ZERO from './components/section_landing/cube_0';
+import CUBE_ONE from './components/section_landing/cube_1';
+import CUBE_TWO from './components/section_landing/cube_2';
+import AboutMe from './components/section_aboutMe/aboutMe';
+import PortfolioPage from './components/section_projects/portfolio';
+import Resume from './components/section_resume/resume';
 import VideoContainer from './components/vidContainer';
-import ChatContainer from './components/chatgpt';
-import Contact from "./components/contact"
-import Community from './components/community';
-import HackSea from './components/hackSea';
-import AiHackathon2 from './components/aiHackathon2';
-import AiHackathon3 from './components/aiHackathon3';
+import ChatContainer from './components/section_resume/aws_chatgpt_interface';
+import Contact from "./components/section_contact/contact"
+import Community from './components/section_community/community';
+import HackSea from './components/section_community/hackSea';
+import AiHackathon2 from './components/section_community/aiHackathon2';
+import AiHackathon3 from './components/section_community/aiHackathon3';
 // CSS 
 import './App.css';
 

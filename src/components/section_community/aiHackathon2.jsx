@@ -1,5 +1,5 @@
 import React from "react";
-import { aiHack2, people } from "./community/communityCollection";
+import { aiHack2, people } from "../community/communityCollection";
 import CarouselBuilder from "./carouselBuilder";
 import TeamCardBuilder from "./teamCardBuilder";
 

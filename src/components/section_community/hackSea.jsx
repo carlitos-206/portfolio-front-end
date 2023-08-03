@@ -1,5 +1,5 @@
 import React from "react";
-import { seaHack, people } from "./community/communityCollection";
+import { seaHack, people } from "../community/communityCollection";
 import CarouselBuilder from "./carouselBuilder";
 import TeamCardBuilder from "./teamCardBuilder";
 

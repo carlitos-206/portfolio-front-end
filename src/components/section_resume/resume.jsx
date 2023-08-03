@@ -1,6 +1,6 @@
 // This file holds the Resume section
 import React from "react";
-const resume = require('./files/Resume.pdf')
+const resume = require('../files/Resume.pdf')
 
 // The html comes from google docs but have been modified
 export default function Resume(){

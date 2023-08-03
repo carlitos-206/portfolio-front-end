@@ -2,14 +2,14 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import python from './images/tech/python.png';
-import javascript from './images/tech/JavaScript.png';
-import lambda from './images/tech/lambda.png';
-import apigateway from './images/tech/apiGateway.jpg';
-import reactFirebase from './images/tech/reactFirebase.png';
-import mongo from './images/tech/mongodb.png';
+import python from '../images/tech/python.png';
+import javascript from '../images/tech/JavaScript.png';
+import lambda from '../images/tech/lambda.png';
+import apigateway from '../images/tech/apiGateway.jpg';
+import reactFirebase from '../images/tech/reactFirebase.png';
+import mongo from '../images/tech/mongodb.png';
 
-export default function CUBE_ONE(){
+export default function CUBE_ZERO(){
   const containerRef = useRef(null);
   
   useEffect(() => {
@@ -74,6 +74,6 @@ export default function CUBE_ONE(){
   }, []);
 
   return (
-    <div className="threeJsObject_1 threeJsObject" ref={containerRef}></div>
+    <div className="threeJsObject_0 threeJsObject" ref={containerRef}></div>
   );
 }

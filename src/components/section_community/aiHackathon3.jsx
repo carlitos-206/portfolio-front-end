@@ -1,5 +1,5 @@
 import React from "react";
-import { people } from "./community/communityCollection";
+import { people } from "../community/communityCollection";
 // import CarouselBuilder from "./carouselBuilder";
 import TeamCardBuilder from "./teamCardBuilder";
 export default function AiHackathon3() {

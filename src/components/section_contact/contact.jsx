@@ -3,10 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import headshot from './images/ui_needs/headshot.jpg';
-import linkin from './images/contact/linkedin.png';
-import github from './images/contact/github.png';
-import youtube from './images/contact/youtube.png';
+import headshot from '../images/ui_needs/headshot.jpg';
+import linkin from '../images/contact/linkedin.png';
+import github from '../images/contact/github.png';
+import youtube from '../images/contact/youtube.png';
 export default function Contact() {
   const [validated, setValidated] = useState(false);
 
