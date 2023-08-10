@@ -93,6 +93,15 @@ function App() {
     )
   }
 
+  // const ProjectsPageDataCollection =() =>{
+  //   return(
+  //     <main>
+  //       <TopMenu />
+  //       <Footer />
+  //     </main>
+  //   )
+  // }
+
 
   const ResumePage = () =>{
     return(

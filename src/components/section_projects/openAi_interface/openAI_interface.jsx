@@ -124,36 +124,70 @@ export default function OpenAIArticle(){
   
     }
 
+    const openPopUp = (e) => {
+      e.preventDefault();
+      window.open('https://github.com/carlitos-206/OpenAiCollection/tree/main/img_generator_script', 'popup', 'width=600,height=600');
+  }
+  const openPopUpWhisper = (e) => {
+    e.preventDefault();
+    window.open('https://github.com/carlitos-206/translatorAi', 'popup', 'width=600,height=600');
+}
+
+const openPopUpDjango = (e) => {
+  e.preventDefault();
+  window.open('https://github.com/carlitos-206/django_ai_api/blob/main/ai_api/app/views.py', 'popup', 'width=600,height=600');
+}
 
   return(
     <div className="openAiArticleContainer">
       <div className="openAiArticle_title">
         <p>Embarking on the Grand Adventure of Artificial Intelligence</p>
       </div>
-      <div className="openAiArticle_body indent">
-        <p>As I set my first steps into the world of programming, the technological marvel that is the OpenAI API presented itself as an overwhelming yet exhilarating avenue of exploration. The experience was akin to encountering the potent mix of enigma and magic. A similar sense of awe captured me when I successfully built my first image generation tool using the Dall-e API, a product of OpenAI that translates textual descriptions into vivid images. This feat was akin to the first spark that lights up an unexplored cave full of mysterious hieroglyphs. At this point, my understanding of machine learning was still in its infancy, a concept as alien and intriguing as the unexplored expanses of the universe.</p>
-        <p>While growing up, I often found myself lamenting the fact that I had arrived too late to participate in the Earth's exploration like the legendary conquistadors, yet too early to delve into the mysteries of the cosmos. However, with the advent of artificial intelligence, a unique frontier opened itself up before me. I found myself standing on the precipice of a revolutionary era, offering opportunities for exploration no less significant than those of uncharted lands or interstellar space. In the prime of my life, I was offered a chance to not only navigate this thrilling domain of artificial intelligence but also to contribute to its progression.</p>
-        <p>Currently, I am diving headfirst into the depths of machine learning, fortifying my arsenal of knowledge with TensorFlow, Google's end-to-end open-source platform. This is not merely about embracing the technological strides of our era. It is about joining the ever-expanding realm of artificial intelligence, and playing an active role in its evolution.</p>
-        <p>The journey thus far has been a productive one. Already, I've managed to construct a tool using ChatGPT, an advanced AI chatbot developed by OpenAI, as well as an image generator. Both these creations are manifestations of my burgeoning understanding of AI, and I take immense pleasure in sharing them for your enjoyment and benefit.</p>
-        <p>In conclusion, while the paths leading to unexplored lands may have faded and the journey to the stars might be in its early stages, there exists an equally fascinating and uncharted path lying right before us - the path of artificial intelligence. We might not be conquistadors or astronauts, but we are explorers in our own right, venturing into the exciting realm of AI. Every day, every algorithm, every model brings us one step closer to a future we once only dreamed of. And I look forward to continuing this journey, exploring, learning, and contributing to the advancement of this thrilling field.</p>
-      </div>
+      <div className="openAiArticle_body">
+        <div className="openAiArticle_text">
+          <p className=" indent">Navigating the nuanced realm of programming, my attention was swiftly captivated by the formidable capabilities of the OpenAI API. Specifically, the Dall-e API has emerged as an emblematic representation of modern generative models, adeptly translating textual instructions into intricate visual representations. Such innovations symbolize the harmonious marriage of computational rigor with creative endeavor.</p>
+          <p className=" indent">Historical narratives often frame bygone eras as periods of terrestrial discovery or the longing for cosmic conquests. Today, however, our epoch is indelibly marked by the rapid advancements and explorations within Artificial Intelligence. This digital frontier, replete with untapped potential and complex challenges, is our generation's domain of exploration.</p>
+          <p className=" indent">Deepening my technical expertise, I have embarked on a meticulous study of TensorFlow, Google's renowned open-source platform tailored for machine learning. Although I am in the preliminary stages of mastering this tool, its potential for sculpting and deploying ML models presents a compelling avenue for innovation.</p>
+          <p className=" indent">In a bid to showcase the practical applications of these cutting-edge technologies, I've developed an array of tools leveraging the intelligence of ChatGPT 4, the synergy of Dall-E capabilities as well as enjoy a small video demo of using Whisper Ai. These are not mere academic exercises but functional utilities designed for pragmatic implementation. I extend an invitation for you to experience these tools firsthand on this platform. For the more technically inclined, a detailed link to the <a className="repoOpenAi" href="https://github.com/carlitos-206/OpenAiCollection/tree/main/img_generator_script" target="popup" onClick={openPopUp}>Dall-e tool in Node</a> as well as a <a className="repoOpenAi" href="https://github.com/carlitos-206/django_ai_api/blob/main/ai_api/app/views.py" target="popup" onClick={openPopUpDjango}> Python Django API </a> is available on my GitHub repository as well as my implementation of <a className="repoOpenAi" href="https://github.com/carlitos-206/translatorAi" target="popup" onClick={openPopUpWhisper}>Whisper Ai.</a> </p>          
+          <p className=" indent">Furthermore, I'm pleased to highlight that my proficiency extends to having trained a variant of GPT, a testament to which can be found delineated in <a href="/resume">my resume page</a> or in <a href="#missingAction">the technical article</a> where I also explain how I implement serverless functions with AWS Lambda and AWS API Gateway and harness the power of OpenAi.</p>
+          <p className=" indent">In summation, as we stand on the threshold of a transformative era in technological exploration, the intricate algorithms and systems that underpin our tools need not be obfuscated mysteries. They are beacons of progress and innovation. I am wholeheartedly invested in this AI odyssey and welcome you to join this collaborative journey. In this confluence of technical acumen and shared exploration, we are poised to shape the evolving tapestry of AI.</p>
+        </div>
+
       <div className="OpenAi_tools_containter">
-          <div className="magic_header">
-              <p>Explore the magic like I did</p>
+          <div className="project_magic_header">
+              <p>Explore the magic like I did below</p>
           </div>
           <div className="project_chatHeader">
-            <p>Powered by <svg width="20px" height="40px" viewBox="140 140 520 520"><path d="m617.24 354a126.36 126.36 0 0 0 -10.86-103.79 127.8 127.8 0 0 0 -137.65-61.32 126.36 126.36 0 0 0 -95.31-42.49 127.81 127.81 0 0 0 -121.92 88.49 126.4 126.4 0 0 0 -84.5 61.3 127.82 127.82 0 0 0 15.72 149.86 126.36 126.36 0 0 0 10.86 103.79 127.81 127.81 0 0 0 137.65 61.32 126.36 126.36 0 0 0 95.31 42.49 127.81 127.81 0 0 0 121.96-88.54 126.4 126.4 0 0 0 84.5-61.3 127.82 127.82 0 0 0 -15.76-149.81zm-190.66 266.49a94.79 94.79 0 0 1 -60.85-22c.77-.42 2.12-1.16 3-1.7l101-58.34a16.42 16.42 0 0 0 8.3-14.37v-142.39l42.69 24.65a1.52 1.52 0 0 1 .83 1.17v117.92a95.18 95.18 0 0 1 -94.97 95.06zm-204.24-87.23a94.74 94.74 0 0 1 -11.34-63.7c.75.45 2.06 1.25 3 1.79l101 58.34a16.44 16.44 0 0 0 16.59 0l123.31-71.2v49.3a1.53 1.53 0 0 1 -.61 1.31l-102.1 58.95a95.16 95.16 0 0 1 -129.85-34.79zm-26.57-220.49a94.71 94.71 0 0 1 49.48-41.68c0 .87-.05 2.41-.05 3.48v116.68a16.41 16.41 0 0 0 8.29 14.36l123.31 71.19-42.69 24.65a1.53 1.53 0 0 1 -1.44.13l-102.11-59a95.16 95.16 0 0 1 -34.79-129.81zm350.74 81.62-123.31-71.2 42.69-24.64a1.53 1.53 0 0 1 1.44-.13l102.11 58.95a95.08 95.08 0 0 1 -14.69 171.55c0-.88 0-2.42 0-3.49v-116.68a16.4 16.4 0 0 0 -8.24-14.36zm42.49-63.95c-.75-.46-2.06-1.25-3-1.79l-101-58.34a16.46 16.46 0 0 0 -16.59 0l-123.31 71.2v-49.3a1.53 1.53 0 0 1 .61-1.31l102.1-58.9a95.07 95.07 0 0 1 141.19 98.44zm-267.11 87.87-42.7-24.65a1.52 1.52 0 0 1 -.83-1.17v-117.92a95.07 95.07 0 0 1 155.9-73c-.77.42-2.11 1.16-3 1.7l-101 58.34a16.41 16.41 0 0 0 -8.3 14.36zm23.19-50 54.92-31.72 54.92 31.7v63.42l-54.92 31.7-54.92-31.7z" fill="var(--gray-900)"></path></svg>OpenAI Chat-GPT with <img width="25" height="25" alt="Amazon Lambda architecture logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/256px-Amazon_Lambda_architecture_logo.svg.png"/> AWS Lambda and AWS API Gateway <img width='25' height='25' src={apiGatewayLogo} alt="API Gateway Logo" /></p>      
-          </div>  
-        <div className="project_chatContainer">
-          <div className="chat-container">
-            <div className="chat-log" id="chat-log"></div>
-              <div className="input-container">
-              <input type="text" id="user-input" 
-              placeholder="Ask Chat GPT a question about me and/or my resume" />
-              <button id="send-btn" onClick={(e)=>{aiSendOff(e)}}>Send</button>
-              </div>
+            <p>Powered by <svg width="20px" height="40px" viewBox="140 140 520 520"><path d="m617.24 354a126.36 126.36 0 0 0 -10.86-103.79 127.8 127.8 0 0 0 -137.65-61.32 126.36 126.36 0 0 0 -95.31-42.49 127.81 127.81 0 0 0 -121.92 88.49 126.4 126.4 0 0 0 -84.5 61.3 127.82 127.82 0 0 0 15.72 149.86 126.36 126.36 0 0 0 10.86 103.79 127.81 127.81 0 0 0 137.65 61.32 126.36 126.36 0 0 0 95.31 42.49 127.81 127.81 0 0 0 121.96-88.54 126.4 126.4 0 0 0 84.5-61.3 127.82 127.82 0 0 0 -15.76-149.81zm-190.66 266.49a94.79 94.79 0 0 1 -60.85-22c.77-.42 2.12-1.16 3-1.7l101-58.34a16.42 16.42 0 0 0 8.3-14.37v-142.39l42.69 24.65a1.52 1.52 0 0 1 .83 1.17v117.92a95.18 95.18 0 0 1 -94.97 95.06zm-204.24-87.23a94.74 94.74 0 0 1 -11.34-63.7c.75.45 2.06 1.25 3 1.79l101 58.34a16.44 16.44 0 0 0 16.59 0l123.31-71.2v49.3a1.53 1.53 0 0 1 -.61 1.31l-102.1 58.95a95.16 95.16 0 0 1 -129.85-34.79zm-26.57-220.49a94.71 94.71 0 0 1 49.48-41.68c0 .87-.05 2.41-.05 3.48v116.68a16.41 16.41 0 0 0 8.29 14.36l123.31 71.19-42.69 24.65a1.53 1.53 0 0 1 -1.44.13l-102.11-59a95.16 95.16 0 0 1 -34.79-129.81zm350.74 81.62-123.31-71.2 42.69-24.64a1.53 1.53 0 0 1 1.44-.13l102.11 58.95a95.08 95.08 0 0 1 -14.69 171.55c0-.88 0-2.42 0-3.49v-116.68a16.4 16.4 0 0 0 -8.24-14.36zm42.49-63.95c-.75-.46-2.06-1.25-3-1.79l-101-58.34a16.46 16.46 0 0 0 -16.59 0l-123.31 71.2v-49.3a1.53 1.53 0 0 1 .61-1.31l102.1-58.9a95.07 95.07 0 0 1 141.19 98.44zm-267.11 87.87-42.7-24.65a1.52 1.52 0 0 1 -.83-1.17v-117.92a95.07 95.07 0 0 1 155.9-73c-.77.42-2.11 1.16-3 1.7l-101 58.34a16.41 16.41 0 0 0 -8.3 14.36zm23.19-50 54.92-31.72 54.92 31.7v63.42l-54.92 31.7-54.92-31.7z" fill="var(--gray-900)"></path></svg>Open AI with <img width="25" height="25" alt="Amazon Lambda architecture logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Lambda_architecture_logo.svg/256px-Amazon_Lambda_architecture_logo.svg.png"/> AWS Lambda and AWS API Gateway <img width='25' height='25' src={apiGatewayLogo} alt="API Gateway Logo" /></p>      
+          </div>
+        <div className="projectMagicContainer">
+
+          <div className="project_chatContainer">
+            <div className="chat-container">
+              <div className="chat-log" id="chat-log"></div>
+                <div className="project_input-container">
+                <input type="text" id="user-input" 
+                placeholder="Free* to use ChatGPT - 4" />
+                <button id="send-btn" onClick={(e)=>{aiSendOff(e)}}>Send</button>
+                </div>
+            </div>
+          </div>
+
+          <div className="project_chatContainer">
+            <div className="chat-container">
+              <div className="chat-log" id="chat-log"></div>
+                <div className="project_input-container">
+                  <input type="text" id="user-input" 
+                    placeholder="Send a prompt to Dall-e" />
+                  <button id="send-btn" onClick={(e)=>{aiSendOff(e)}}>Send</button>
+                </div>
+            </div>
+          </div>
+          <div className="project_vid">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TP2QHngWIzA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share: fullscreen;" allowFullScreen></iframe>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

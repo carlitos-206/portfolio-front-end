@@ -7,15 +7,15 @@ export default function Timeline() {
       console.log(e.target)
       console.log(num)
       if (num === 1) {
-        window.open('https://github.com/carlitos-206/mainPortfolio', '_blank')
+        window.open('https://github.com/carlitos-206/mainPortfolio', 'popup', 'width=600,height=600')
       }else if(num === 2){
-        window.open('https://github.com/carlitos-206/JSPortfolio', '_blank')
+        window.open('https://github.com/carlitos-206/JSPortfolio', 'popup', 'width=600,height=600')
       }else if(num === 3){
-        window.open('https://github.com/carlitos-206/carlitos_react/tree/development-react', '_blank')
+        window.open('https://github.com/carlitos-206/carlitos_react/tree/development-react', 'popup', 'width=600,height=600')
       }else if(num === 4){
-        window.open('https://github.com/carlitos-206/portfolio-front-end/tree/dev', '_blank')
+        window.open('https://github.com/carlitos-206/portfolio-front-end/tree/dev', 'popup', 'width=600,height=600')
       }else if(num === 5){
-        window.open('https://github.com/carlitos-206/portfolio-front-end/tree/dev2', '_blank')
+        window.open('https://github.com/carlitos-206/portfolio-front-end/tree/dev2', 'popup', 'width=600,height=600')
       }
     }
     return(
