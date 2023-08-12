@@ -140,8 +140,11 @@ const openPopUpDjango = (e) => {
 
   return(
     <div className="openAiArticleContainer">
-      <div className="openAiArticle_title">
-        <p>Embarking on the Grand Adventure of Artificial Intelligence</p>
+      <div className="openAiArticle_title_container">
+        <div className="openAirticle_title_text">
+          <p>Embarking on the Grand Adventure of Artificial Intelligence</p>
+          <p id="projects_openAi_outline_text">Projects Outlined in Article: <a className="repoOpenAi" href="https://github.com/carlitos-206/OpenAiCollection/tree/main/img_generator_script" target="popup" onClick={openPopUp}>Dall-e tool in Node</a>, <a className="repoOpenAi" href="https://github.com/carlitos-206/django_ai_api/blob/main/ai_api/app/views.py" target="popup" onClick={openPopUpDjango}> Dall-e Tool as a Python Django API</a>, <a className="repoOpenAi" href="https://github.com/carlitos-206/translatorAi" target="popup" onClick={openPopUpWhisper}>Whisper Ai Implementation</a>, and a <a href="#missingAction">Context Trained Chat GPT</a> </p>
+        </div>
       </div>
       <div className="openAiArticle_body">
         <div className="openAiArticle_text">

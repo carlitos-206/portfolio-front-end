@@ -28,6 +28,7 @@ import {  Routes, Route } from 'react-router-dom'
   // Projects Section
     import PortfolioPage from './components/section_projects/portfolio/portfolio';
     import OpenAIArticle from './components/section_projects/openAi_interface/openAI_interface';
+    import BrowserData from './components/section_projects/browserData/browserData';
 
   // Resume Section
     import Resume from './components/section_resume/resume';
@@ -93,14 +94,15 @@ function App() {
     )
   }
 
-  // const ProjectsPageDataCollection =() =>{
-  //   return(
-  //     <main>
-  //       <TopMenu />
-  //       <Footer />
-  //     </main>
-  //   )
-  // }
+  const ProjectsPageDataCollection =() =>{
+    return(
+      <main>
+        <TopMenu />
+        <BrowserData />
+        <Footer />
+      </main>
+    )
+  }
 
 
   const ResumePage = () =>{
@@ -167,6 +169,7 @@ function App() {
         <Route path="/about" element={ <AboutMePage /> } />
         <Route path='/projects/personal/portfolio' element= { <ProjectsPagePersonalPortfolio />} />
         <Route path='/projects/personal/openai_interface' element= { <ProjectsPageOpenAiInterface />} />
+        <Route path='/projects/personal/browser_data' element = {<ProjectsPageDataCollection />} />
         <Route path='/resume' element= { <ResumePage />} />
         <Route path='/community' element= { <CommunityPage />} />
         <Route path='/community/hackathon/AiHackathon2_0atSURFIncubator' element= { <AiHackacthon2Page />} />

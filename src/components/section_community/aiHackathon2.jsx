@@ -1,6 +1,6 @@
 import React from "react";
 import { aiHack2, people } from "../community/communityCollection";
-import CarouselBuilder from "./carouselBuilder";
+import CarouselBuilder from "../global_components/carouselBuilder";
 import TeamCardBuilder from "./teamCardBuilder";
 
 export default function aiHackathon2(){

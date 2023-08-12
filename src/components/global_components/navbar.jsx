@@ -31,14 +31,11 @@ export default function TopMenu() {
               <NavDropdown.Item href="/projects/personal/openai_interface">
               🔴 OpenAI API interface
               </NavDropdown.Item>
-              {/* <NavDropdown.Item href="/projects/personal/whisperAi">
-                Whisper Ai Translator App
-              </NavDropdown.Item> */}
-              <NavDropdown.Item href="#action">
+              <NavDropdown.Item href="/projects/personal/browser_data">
               🔴 Browser Data Collection
               </NavDropdown.Item>
               <NavDropdown.Item href="/resume">
-              🔴 OpenAI: ChatGPT Resume QA
+              Technical Article: Context Training Chat GPT
               </NavDropdown.Item>
               
               <h6 style={{marginLeft: "15px", color: "black"}}>University of Wa. Projects</h6>
