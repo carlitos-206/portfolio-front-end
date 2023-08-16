@@ -130,7 +130,7 @@ export default function ChatContainer() {
           <div className="chat-log" id="chat-log"></div>
             <div className="input-container">
             <input type="text" id="user-input" 
-            placeholder="Ask Chat GPT a question about me and/or my resume" />
+            placeHolder="Ask Chat GPT a question about me and/or my resume" />
             <button id="send-btn" onClick={(e)=>{aiSendOff(e)}}>Send</button>
             </div>
         </div>

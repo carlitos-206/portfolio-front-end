@@ -2758,7 +2758,7 @@ top: 500px;
         box-shadow: inset 0 0 2000px rgba(167, 39, 39, 0.717);
         /* filter: blur(10px); */
         position: fixed;
-        height: 650px;
+        height: 480px;
         top: 100px;
         width: 30%;
         left: 37.5%;
@@ -2768,7 +2768,7 @@ top: 500px;
       }
       .bd_agreement_title{
         position: absolute;
-        top: 70px;
+        top: 10px;
         color: white;
         font-size: 25px;
         font-weight: bold;
@@ -2791,21 +2791,26 @@ top: 500px;
       }
       .bd_agreement_body{
         position: relative;
+        top: -100px;
         left: 20px;
         width: 200%;
       }
       .bd_new_agreement_body{
         color: white;
         font-size: large;
-        height: 500px;
+        height: 350px;
         background-color: #00000076;
         width: 90%;
         overflow-y: scroll;
         position: absolute;
-        padding: 0% 25%;
+        padding: 5% 10%;
         margin: 70px 5% ;
       }
 
+      .bd_sourceCodeLink_text{
+        font-size: 15px;
+        text-decoration: underline;
+      }
 
 
 

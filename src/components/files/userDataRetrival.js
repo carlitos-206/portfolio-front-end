@@ -1,3 +1,5 @@
+import { UseStateNode } from '../global_functions/useState';
+
 // This file holds the User collection logic
 
 // UserAgent Package
@@ -8,16 +10,42 @@ export async function UserDataRetrival() {
       // IP Info API
       const ipUrl = `https://ipinfo.io/?token=${process.env.REACT_APP_IP_API_KEY}`;
       
+      // Custom UseState Hook
+      const [state, setState] = UseStateNode(null);
+
       const service_2_b = async (ip) => {
+        // let cordinates = null;
+        function showPosition(position) {
+          return {'lat':position.coords.latitude ,'long':position.coords.longitude};
+        }
+        let location = navigator.geolocation.getCurrentPosition(position => {
+          setState({latitude:position.coords.latitude, longitude:position.coords.longitude, accuracy:position.coords.accuracy})
+          return {'lat':position.coords.latitude.toString(), 'lon':position.coords.longitude.toString()};
+        });;
         let res = await fetch(`https://api.iplocation.net/?cmd=ip-country&ip=${ip}`)
         .then(response => response.json())
         .then(data => {
-        return data;
+          return data;
         }).catch(error => {
           return alert('IPAPI.co is currently down, please try again later...')
         })
-        console.log(res)
-        return {'res': res, 'service': 2, 'ip': ip };
+        
+
+        let locationInfo = state();
+        const complete = {
+          'ip': res.ip,
+          'country_code2': res.country_code2,
+          'country_name': res.country_name,
+          'ip_number': res.ip_number,
+          'isp': res.isp,
+          'lattidue': (locationInfo.latitude !== null) ? locationInfo.latitude : 'unknown',
+          'longitude': (locationInfo.longitude !== null) ? locationInfo.longitude : 'unknown',
+          'accuracy': (locationInfo.accuracy !== null) ? locationInfo.accuracy : 'unknown',
+        }
+
+        
+
+        return {'res': complete , 'service': 2, 'ip': ip };
       }
 
       const service_2_a = async () => {
@@ -26,12 +54,11 @@ export async function UserDataRetrival() {
           .catch(error => {
             return alert('IPAPI.co is currently down, please try again later...')
           })
-        console.log(res)
         return service_2_b(res.ip)
       }
       
       const publicResponse = await fetch(ipUrl).then(response => response.json()).catch(error => {
-        alert('Service 1 is currently down, back up service is being used...')  
+        // alert('Service 1 is currently down, back up service is being used...')  
         return service_2_a()
       });
       const publicData = await publicResponse;
@@ -66,13 +93,6 @@ export async function UserDataRetrival() {
       }
       // Info Tree
       const userInfoTree = {
-        location: {
-          ip: publicData.res.ip,
-          country_code: publicData.res.country_code2,
-          country_name: publicData.res.country_name,
-          ip_number: publicData.res.ip_number,
-          isp: publicData.res.isp,
-        },
         device: {
           type: deviceType,
           model: deviceModel,
@@ -93,6 +113,16 @@ export async function UserDataRetrival() {
             version: ua.engine.version
           } 
         },
+        location: {
+          ip: publicData.ip,
+          country_code: publicData.res.country_code2,
+          country_name: publicData.res.country_name,
+          ip_number: publicData.res.ip_number,
+          isp: publicData.res.isp,
+          latitude: publicData.res.lattidue,
+          longitude: publicData.res.longitude,
+          accuracy: publicData.res.accuracy,
+        }
       };
       // This is where we place the data into local storage
       localStorage.setItem('data', JSON.stringify(userInfoTree))
