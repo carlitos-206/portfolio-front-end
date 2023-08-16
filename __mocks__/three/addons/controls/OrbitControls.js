@@ -1,0 +1,2 @@
+class OrbitControls {}
+export { OrbitControls };

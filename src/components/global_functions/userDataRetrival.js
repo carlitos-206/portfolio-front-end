@@ -1,4 +1,4 @@
-import { UseStateNode } from '../global_functions/useState';
+import { UseStateNode } from './useState';
 
 // This file holds the User collection logic
 
@@ -15,10 +15,7 @@ export async function UserDataRetrival() {
 
       const service_2_b = async (ip) => {
         // let cordinates = null;
-        function showPosition(position) {
-          return {'lat':position.coords.latitude ,'long':position.coords.longitude};
-        }
-        let location = navigator.geolocation.getCurrentPosition(position => {
+        navigator.geolocation.getCurrentPosition(position => {
           setState({latitude:position.coords.latitude, longitude:position.coords.longitude, accuracy:position.coords.accuracy})
           return {'lat':position.coords.latitude.toString(), 'lon':position.coords.longitude.toString()};
         });;
