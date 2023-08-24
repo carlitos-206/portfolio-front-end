@@ -53,7 +53,7 @@ export default function TopMenu() {
               <NavDropdown.Item href="#action/3.4">
                 Group Project: Music Groups App
               </NavDropdown.Item>
-              <NavDropdown.Item href="/resume">
+              <NavDropdown.Item href="/projects/school/dojo/solo">
                 Solo Project: Party Connection App
               </NavDropdown.Item>
             </NavDropdown>

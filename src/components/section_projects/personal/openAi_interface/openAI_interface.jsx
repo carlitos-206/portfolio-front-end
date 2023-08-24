@@ -1,5 +1,5 @@
 import React from "react";
-import apiGatewayLogo from "../../images/tech/awsAPIGateway.png"
+import apiGatewayLogo from "../../../images/tech/awsAPIGateway.png"
 import axios from "axios";
 export default function OpenAIArticle(){
 
@@ -170,8 +170,8 @@ const openPopUpDjango = (e) => {
               <div className="chat-log" id="chat-log"></div>
                 <div className="project_input-container">
                 <input type="text" id="user-input" 
-                placeholder="Free* to use ChatGPT - 4" />
-                <button id="send-btn" onClick={(e)=>{aiSendOff(e)}}>Send</button>
+                placeholder="Free* to use ChatGPT - 4 *Disabled*" />
+                <button id="send-btn" onClick={(e)=>{aiSendOff(e)}} disabled>Send</button>
                 </div>
             </div>
           </div>
@@ -181,8 +181,8 @@ const openPopUpDjango = (e) => {
               <div className="chat-log" id="chat-log"></div>
                 <div className="project_input-container">
                   <input type="text" id="user-input" 
-                    placeholder="Send a prompt to Dall-e" />
-                  <button id="send-btn" onClick={(e)=>{aiSendOff(e)}}>Send</button>
+                    placeholder="Send a prompt to Dall-e *Disabled*" />
+                  <button id="send-btn" onClick={(e)=>{aiSendOff(e)}} disabled>Send</button>
                 </div>
             </div>
           </div>

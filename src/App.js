@@ -26,10 +26,13 @@ import {  Routes, Route } from 'react-router-dom'
     import AboutMe from './components/section_aboutMe/aboutMe';
 
   // Projects Section
-    import PortfolioPage from './components/section_projects/portfolio/portfolio';
-    import OpenAIArticle from './components/section_projects/openAi_interface/openAI_interface';
-    import BrowserData from './components/section_projects/browserData/browserData';
+    // Personal Projects
+    import PortfolioPage from './components/section_projects/personal/portfolio/portfolio';
+    import OpenAIArticle from './components/section_projects/personal/openAi_interface/openAI_interface';
+    import BrowserData from './components/section_projects/personal/browserData/browserData';
 
+    //School Projects
+    import DojoSoloProject from './components/section_projects/dojo/solo/dojoSoloProject';
   // Resume Section
     import Resume from './components/section_resume/resume';
     import ChatContainer from './components/section_resume/aws_chatgpt_interface';
@@ -105,6 +108,17 @@ function App() {
   }
 
 
+  const ProjectsPageDojoSoloProject = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <DojoSoloProject />
+        <Footer />
+      </main>
+    )
+  }
+
+
   const ResumePage = () =>{
     return(
       <main>
@@ -170,6 +184,7 @@ function App() {
         <Route path='/projects/personal/portfolio' element= { <ProjectsPagePersonalPortfolio />} />
         <Route path='/projects/personal/openai_interface' element= { <ProjectsPageOpenAiInterface />} />
         <Route path='/projects/personal/browser_data' element = {<ProjectsPageDataCollection />} />
+        <Route path='/projects/school/dojo/solo' element= { <ProjectsPageDojoSoloProject />} />
         <Route path='/resume' element= { <ResumePage />} />
         <Route path='/community' element= { <CommunityPage />} />
         <Route path='/community/hackathon/AiHackathon2_0atSURFIncubator' element= { <AiHackacthon2Page />} />

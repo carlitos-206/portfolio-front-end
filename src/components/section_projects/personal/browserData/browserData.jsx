@@ -1,9 +1,9 @@
 import React  from "react";
 import CarouselBuilder from "./carousel";
-import { imgCollection } from "../../images/userAgentEmails/collection";
-import img_0 from "../../images/userAgentEmails/firbaseCollection/img_0.png"
+import { imgCollection } from "../../../images/userAgentEmails/collection";
+import img_0 from "../../../images/userAgentEmails/firbaseCollection/img_0.png"
 import Button from 'react-bootstrap/Button';
-import {UserDataRetrival} from '../../global_functions/userDataRetrival'
+import {UserDataRetrival} from '../../../global_functions/userDataRetrival'
 export default function BrowserData(){
 
 
@@ -110,6 +110,7 @@ export default function BrowserData(){
           if (typeof obj[key] === 'object' && obj[key] !== null) {
             let newtext = document.createElement('p')
             newtext.className = 'bd_newText'
+            newtext.setAttribute('style', 'font-weight: bold; color: #ffcc00;')
             newtext.innerText = '\n' + key.toUpperCase() + ' \n'
             newBody.append(newtext)
             container.append(newBody)
@@ -118,7 +119,8 @@ export default function BrowserData(){
           } else {
             // console.log(parentKey + key + ': ' + obj[key]);
             let newtext = document.createElement('p')
-            newtext.className = 'indent'
+            newtext.className = 'bd_newText indent'
+            newtext.setAttribute('style', 'margin-left: 20px;')
             if(key === 'accuracy'){
               let map = document.createElement('a')
               map.href = `https://www.google.com/maps/search/?api=1&query=${obj['latitude']},${obj['longitude']}`
@@ -183,7 +185,7 @@ export default function BrowserData(){
       window.open('https://github.com/carlitos-206/useragent-Django2.2/blob/main/data-collection-views.py', 'popup', 'width=700,height=600')
     }
     if(source === 'rootCode'){
-      window.open('https://github.com/carlitos-206/portfolio-front-end/blob/dev2/src/components/files/userDataRetrival.js', 'popup', 'width=700,height=600')
+      window.open('https://github.com/carlitos-206/portfolio-front-end/blob/dev2/src/components/global_functions/userDataRetrival.js', 'popup', 'width=700,height=600')
     }
     if(source === 'uw_1_code'){
       window.confirm('Code Starts at line 113')
@@ -215,17 +217,17 @@ export default function BrowserData(){
           <CarouselBuilder images={imgCollection}/>
           <p className="bd_article_text">This exploration didn't end with Python. During my introductory JavaScript course titled "JSCRIPT 310 B Wi 22: Programming For The Browser In JavaScript", I ventured into the nuances of JavaScript, a language I found surprisingly intuitive. While the curriculum was browser-centric, my thirst for knowledge led me to Node.js, a runtime environment for JavaScript outside the browser. This self-guided journey culminated in the creation of a <a href="#">rudimentary full-stack JavaScript application</a>, even as I grappled with the intricacies of connecting it to a database.</p>
           <p className="bd_article_text">My quest for user information was further enriched with the discovery of IPinfo.io, a service that offers user location details through a straightforward API call. This, combined with the Navigator Web API, felt like obtaining a holistic snapshot of every incoming user request.</p>
-          <Button className="bd_button glow-on-hover" variant="primary" type="submit" onClick={(e)=>{showReflection(e)}} >
-            Click Here
-          </Button>
-          <p className="bd_article_text">Subsequently, my exposure to <a href="#">React JS and Google Firebase: Firestore</a> during my second course was a game-changer. The pieces of the puzzle finally fit together, enabling me to capture and store the digital snapshot of every visitor.</p>
-          <img className="bd_firebase_img" src={img_0} alt="" />
-          <p className="bd_article_text">With multiple storage options now at my disposal, including Mongo DB and AWS Dynamo DB, I am well-equipped to harness user data to its fullest potential in future projects.</p>
-          <p className="bd_article_text">Do you want to see your reflection? <a href="https://github.com/carlitos-206/portfolio-front-end/blob/dev2/src/components/files/userDataRetrival.js" target="popup" onClick={(e)=>{openPopUp(e, 'rootCode')}} className="bd_sourceCodeLink_text">Read the source code</a> </p>
           {/* <Button className="bd_button glow-on-hover" variant="primary" type="submit" onClick={(e)=>{showReflection(e)}} >
             Click Here
           </Button> */}
-          
+          <p className="bd_article_text">Subsequently, my exposure to <a href="#">React JS and Google Firebase: Firestore</a> during my second course was a game-changer. The pieces of the puzzle finally fit together, enabling me to capture and store the digital snapshot of every visitor.</p>
+          <img className="bd_firebase_img" src={img_0} alt="" />
+          <p className="bd_article_text">With multiple storage options now at my disposal, including Mongo DB and AWS Dynamo DB, I am well-equipped to harness user data to its fullest potential in future projects.</p>
+          <p className="bd_article_text">Do you want to see your reflection? <a href="https://github.com/carlitos-206/portfolio-front-end/blob/dev2/src/components/global_functions/userDataRetrival.js" target="popup" onClick={(e)=>{openPopUp(e, 'rootCode')}} className="bd_sourceCodeLink_text">Read the source code</a> </p>
+          <Button className="bd_button glow-on-hover" variant="primary" type="submit" onClick={(e)=>{showReflection(e)}} >
+            Click Here
+          </Button>
+
         </div>
 
       </div>
