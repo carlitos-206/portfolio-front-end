@@ -50,7 +50,7 @@ export default function TopMenu() {
               </NavDropdown.Item>
             <NavDropdown.Divider />
               <h6 style={{marginLeft: "15px", color: "black"}}> Coding Dojo Projects:</h6>
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/projects/school/dojo/group">
                 Group Project: Music Groups App
               </NavDropdown.Item>
               <NavDropdown.Item href="/projects/school/dojo/solo">

@@ -33,6 +33,7 @@ import {  Routes, Route } from 'react-router-dom'
 
     //School Projects
     import DojoSoloProject from './components/section_projects/dojo/solo/dojoSoloProject';
+    import DojoGroupProject from './components/section_projects/dojo/group/dojoGroupProject';
   // Resume Section
     import Resume from './components/section_resume/resume';
     import ChatContainer from './components/section_resume/aws_chatgpt_interface';
@@ -118,6 +119,15 @@ function App() {
     )
   }
 
+  const ProjectsPageDojoGroupProject = () =>{
+    return(
+      <main>
+        <TopMenu />
+        <DojoGroupProject />
+        <Footer />
+      </main>
+    )
+  }
 
   const ResumePage = () =>{
     return(
@@ -185,6 +195,7 @@ function App() {
         <Route path='/projects/personal/openai_interface' element= { <ProjectsPageOpenAiInterface />} />
         <Route path='/projects/personal/browser_data' element = {<ProjectsPageDataCollection />} />
         <Route path='/projects/school/dojo/solo' element= { <ProjectsPageDojoSoloProject />} />
+        <Route path='/projects/school/dojo/group' element= { <ProjectsPageDojoGroupProject />} />
         <Route path='/resume' element= { <ResumePage />} />
         <Route path='/community' element= { <CommunityPage />} />
         <Route path='/community/hackathon/AiHackathon2_0atSURFIncubator' element= { <AiHackacthon2Page />} />

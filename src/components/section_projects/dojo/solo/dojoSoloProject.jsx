@@ -20,7 +20,7 @@ export default function DojoSoloProject() {
 
   const openPopUp = (e, source)=>{
     if(source === 'rootCode'){
-      window.open('https://github.com/carlitos-206/solo_project_1', 'popup', 'width=700,height=600')
+      window.open('https://github.com/carlitos-206/solo_project_1', 'popup', 'width=800,height=600')
     }
    
     
