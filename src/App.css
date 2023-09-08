@@ -2865,32 +2865,87 @@ top: 500px;
     }
 
     .dojoGroupProject_body{
-      width: 50%;
+      width: 80%;
       position: relative;
-      left: 25%;
+      left: 10%;
     }
 
     .dojoGroupProject_text{
       margin: 10px 0px 10px 0px;
+      font-size: 24px;
     }
 
 
+  .ngrokVid{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    left: 25%;
+  }
+
+  .dojoCert{
+    border: 2px black solid;
+    position: relative;
+    left: 10%;
+  }
 
 
 
 
 
+ /* Personal- UW ECOMERCE PROJECT -----------------------------------------------------------------------------------
+      ----------------------------------------------------------------------------------------------
+      ------------------------------------------------------------------------------------------------
+      ---------------------------------------------------------------------------------------------
+      */
 
 
 
+  .uwEcommerceContainer{
+    position: relative;
+    top: 60px;
+    margin-bottom: 200px;
 
+  }
+  
+  #storeLogoImg{
+    position: relative;
+    height: 10vh;
+    top: 1.75vh;
+  }
 
-
-
-
-
-
-
+  .uwEcommerceTitle{
+    border: groove rgb(7, 109, 177) 1rem;
+    background-color: rgba(30, 32, 51, 0.227);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    left: 25%;
+    
+  }
+    
+  .uwEcommerceBody{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    font-size: 18px;
+  }
+  .uwEcommerceText{
+    font-size: 20px;
+    margin: 15px 0px 15px;
+  }
+  .uwEcommerceCode{
+    border: solid 2px rgb(0, 0, 0);
+    width: 80%;
+    position: relative;
+    left: 10%;
+    margin: 15px 0px 15px ;
+    padding: 5px;
+  }
 
 
 
@@ -2955,6 +3010,11 @@ top: 500px;
   font-size: 32px;
   font-weight: bold;
   margin: 40px 0px;
+}
+
+.ecommerceDjangoRef{
+  text-decoration: underline;
+  display: inline;
 }
 
 
@@ -3768,10 +3828,14 @@ _te
 */
 
 .contactContainer{
-  /* border: solid 1px black; */
+  border: solid 1px black;
   width: 100%;
   position: absolute;
   top: 100px;
+  width: 50%;
+  left: 25%;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .contactHeader{
@@ -3782,8 +3846,14 @@ _te
 .contactForm{
   display: flex;
   justify-content: center;
-  width: 50%;
-  margin-left: 25%;
+  /* width: 50%; */
+  position: relative;
+  /* left: 10%; */
+  /* top: 30px; */
+}
+.test_a{
+  width: 200px;
+  outline: solid green 2px;
 }
 .contactMessageBox{
   position: relative;
@@ -3795,9 +3865,9 @@ _te
 }
 .contactSubmitBtn{
   position: relative;
-  top: -80px;
+  /* top: -80px; */
   width: 300px;
-  left: 55%
+  /* left: 55% */
 }
 .externalConnection{
   display: flex;

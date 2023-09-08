@@ -34,19 +34,19 @@ export default function TopMenu() {
               <NavDropdown.Item href="/projects/personal/browser_data">
               🔴 Browser Data Collection
               </NavDropdown.Item>
-              <NavDropdown.Item href="/resume">
+              <NavDropdown.Item href="#missing">
               Technical Article: Context Training Chat GPT
               </NavDropdown.Item>
               
               <h6 style={{marginLeft: "15px", color: "black"}}>University of Wa. Projects</h6>
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/projects/school/uw/group">
               🔴 Group Project: Washington Wildfires Community
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action">
+              <NavDropdown.Item href="/projects/school/uw/ecommerce">
                 Solo Project: E-Commerce Site
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/">
-              *🔴 Solo Project: JS Portfolio
+              <NavDropdown.Item href="/projects/school/uw/solo">
+                Solo Project: JS Portfolio
               </NavDropdown.Item>
             <NavDropdown.Divider />
               <h6 style={{marginLeft: "15px", color: "black"}}> Coding Dojo Projects:</h6>

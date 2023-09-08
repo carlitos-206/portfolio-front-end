@@ -2,7 +2,6 @@ import React ,{useState}from "react";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
 import headshot from '../images/ui_needs/headshot.jpg';
 import linkin from '../images/contact/linkedin.png';
 import github from '../images/contact/github.png';
@@ -11,6 +10,8 @@ export default function Contact() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("form submitted", event.target)
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
@@ -23,12 +24,12 @@ export default function Contact() {
     <>
       <div className="contactContainer">
         <div className="contactHeader">
-          <p>Lets Connect !</p>
+          <p>Contact Me</p>
         </div>
         <div className="contactForm">
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
-            <Row className="mb-3">
-              <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Col className="mb-3">
+              <Form.Group className="inputGroups" controlId="validationCustom01">
                 <Form.Label>First name</Form.Label>
                 <Form.Control
                   required
@@ -37,7 +38,7 @@ export default function Contact() {
                 />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>
-              <Form.Group as={Col} md="4" controlId="validationCustom02">
+              <Form.Group className="inputGroups" controlId="validationCustom02">
                 <Form.Label>Last name</Form.Label>
                 <Form.Control
                   required
@@ -46,26 +47,31 @@ export default function Contact() {
                 />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>
-              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="name@example.com" required/>
+              <Form.Group className="inputGroups" controlId="exampleForm.ControlInput1">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="name@example.com" required/>
+                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>
-              <Form.Group className="mb-3 contactMessageBox" controlId="exampleForm.ControlTextarea1">
-                  <Form.Control as="textarea" rowSpan={5} colSpan={50} required placeholder="Write me a message ... "/>
+              <Form.Group  controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Message (optional)</Form.Label>
+                <Form.Control as="textarea" rowSpan={5} colSpan={50} placeholder="Write me a message ... "/>
               </Form.Group>
               <Form.Group className="mb-3 contactReasonContainer">
                 <p>Reason for Connection</p>
-                <Form.Select aria-label="Default select example" required>
-                  <option value="other" selected disabled hidden> Select a reason </option>
+                <Form.Select required  as="select" type="select" >
+                  <option value=""> Select a reason </option>
                   <option value="hiring">Hiring</option>
                   <option value="collaboration">Collaboration</option>
                   <option value="coaching">Coaching</option>
-                  <option value="invite">Invite</option>
+                  <option value="invite">Invite to event</option>
+                  <option value="demo">Project Demo</option>
                   <option value="other">Other</option>
                 </Form.Select>
+                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+
               </Form.Group>
-              </Row>
-              <Button className="contactSubmitBtn" type="submit">Send Connection</Button>
+              </Col>
+              <Button className="contactSubmitBtn glow-on-hover" type="submit">Contact Me</Button>
           </Form>
         </div>
         <div className="externalConnection">
@@ -74,7 +80,7 @@ export default function Contact() {
             <Button className="externalButtons" variant="outline-primary" href="https://www.linkedin.com/in/carlitos206/"><img className="connectionIcons linkedInIcon"src={linkin} alt="LinkedIn" /></Button>
             <Button className="externalButtons" variant="outline-primary" href="https://github.com/carlitos-206"><img className="connectionIcons linkedInIcon"src={github} alt="GitHub" /></Button>
             <Button id="youtubeBtn" className="externalButtons" variant="outline-primary" href="https://www.youtube.com/channel/UCfJtIgTcGEX_D0TLjFi-COQ"><img className="connectionIcons youtubeIcon"src={youtube} alt="YouTube" /></Button>
-            <Button className="externalButtons emailBtn" variant="outline-primary" href="mailto:carloscaceres041@gmail.com" >Send Email</Button>
+            {/* <Button className="externalButtons emailBtn" variant="outline-primary" href="mailto:carloscaceres041@gmail.com" >Send Email</Button> */}
           </div>
         </div>
       </div>

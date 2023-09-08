@@ -10,7 +10,7 @@ export default function PortfolioPage() {
       <div className="portfolioContainer">
         <div className="portfolioArticle">
           <div className="portfolioSections">
-            <p className="indent">Every artist has their first sketch, every writer their first draft, and every web developer their first portfolio. Looking back on my journey, it's fascinating to see how much has changed since I built my first portfolio site using a simple Django App that served the frontend with Jinja. The website was static, merely consisting of a <a href={zion} target="_blank"  rel="noreferrer">high-resolution picture I took at Zion National Park</a>, a simple accordion with a statement, my resume, and contact links. At this point, JavaScript was still uncharted territory for me, and managing databases in production was a daunting task.</p>
+            <p className="indent">Every artist has their first sketch, every writer their first draft, and every web developer their first portfolio. Looking back on my journey, it's fascinating to see how much has changed since I built my first portfolio site using a simple Django App that served the frontend with Jinja. The website was static, merely consisting of a <a title="View Image"href={zion} target="_blank"  rel="noreferrer">high-resolution picture I took at Zion National Park</a>, a simple accordion with a statement, my resume, and contact links. At this point, JavaScript was still uncharted territory for me, and managing databases in production was a daunting task.</p>
           </div>
           <div className="portfolioSections">
             <p className="boldFont">First Brush with JavaScript</p>
@@ -28,15 +28,12 @@ export default function PortfolioPage() {
           </div>
           <div className="portfolioSections">
             <p className="boldFont">Building the Ultimate Portfolio</p>
-            <p className="indent">Today, as I pen this down, I find myself working on what I believe could be my final portfolio. However, this time, I have shifted my focus from mere implementation to showcasing my expertise through my projects. I've incorporated simple backend services using AWS API Gateway with AWS Lambda for my <a href="/resume">Resume QA Ai</a> and Google Firebase to manage incoming messages. The ease and flexibility of serverless architecture have allowed seamless integration of my Python scripts. While I could have managed all communication in AWS using DynamoDB, I have intentionally diversified to keep the challenge and fun intact in my coding journey.</p>
+            <p className="indent">Today, as I pen this down, I find myself working on what I believe could be my final portfolio. However, this time, I have shifted my focus from mere implementation to showcasing my expertise through my projects. I've incorporated simple backend services using AWS API Gateway with AWS Lambda for my <a title='Go to Resume' href="/resume">Resume QA Ai</a> and Google Firebase to manage incoming messages. The ease and flexibility of serverless architecture have allowed seamless integration of my Python scripts. While I could have managed all communication in AWS using DynamoDB, I have intentionally diversified to keep the challenge and fun intact in my coding journey.</p>
             <p className="indent">This latest portfolio is more than just a showcase of my work; it's a reflection of myself, my progression as a developer, and my passion for coding. In the past, I assumed my work would speak for itself, but I've realized the importance of infusing my personality into my portfolio. That is the ultimate goal of this portfolio—to market myself.</p>
             <p className="indent">I welcome you to explore my journey through these projects, utilize the AI services, and feel free to reach out with any questions. My evolution from a Django newbie to a full-stack developer navigating AWS and Google Firebase showcases not only the range of my skills but the adaptability, dedication, and passion I bring to web development. As they say, the journey of a thousand miles begins with a single step, and I'm excited to see where my steps will lead in the future of web development.</p>
           </div>
         </div>
         <div className="portfolioMedia">
-          <div className="portfolioVideo">
-            <iframe width='100%' height='100%'src="https://www.youtube.com/embed/TP2QHngWIzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-          </div>
           <div className="portfolioProjects">
             <Timeline />
           </div>

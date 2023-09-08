@@ -143,7 +143,7 @@ export default function BrowserData(){
       
       iterateObject(data);
       console.log(data)
-      alert(JSON.stringify(data))
+      // alert(JSON.stringify(data))
       let close = document.createElement('button')
       close.className= 'bd_button_group glow-on-hover btn btn-danger'
       close.innerText= 'Close'
@@ -200,10 +200,10 @@ export default function BrowserData(){
       <div className="bd_container">
         <div className="bd_title">
           <p className="coolTitle">User Data in Web Development</p>
-          <p className="bd_project_outline_text">Projects Outlined in Article: <a href="https://github.com/carlitos-206/useragent-Django2.2/blob/main/data-collection-views.py" target="popup" onClick={(e)=>{openPopUp(e, 'auxScript')}}>User Agent in Python Django plug in tool</a>,  
-              <a href="https://github.com/carlitos-206/mainPortfolio/blob/Main/portfolioAPP/views.py" target="popup" onClick={(e)=>{openPopUp(e, 'portfolio')}}> Portfolio{'(Deprecated)'}</a>, 
-              <a href="https://github.com/carlitos-206/JSPortfolio/blob/main/public/uwReqs.js" target="popup" onClick={(e)=>{openPopUp(e, 'uw_1_code')}} > UW Course 1 Final</a>,
-              <a href="https://github.com/carlitos-206/react-firebase-ecomerce-sdk/blob/main/sample-app-for-sdk/src/components/dataCollection/arrivalRequest.js" target="popup" onClick={(e)=>{openPopUp(e, 'uw_2_code')}}> UW Course 2 Final</a>
+          <p className="bd_project_outline_text">Projects Outlined in Article: <a title='Read code from GitHub' href="https://github.com/carlitos-206/useragent-Django2.2/blob/main/data-collection-views.py" target="popup" onClick={(e)=>{openPopUp(e, 'auxScript')}}>User Agent in Python Django plug in tool</a>,  
+              <a title='Read code from GitHub' href="https://github.com/carlitos-206/mainPortfolio/blob/Main/portfolioAPP/views.py" target="popup" onClick={(e)=>{openPopUp(e, 'portfolio')}}> Portfolio{'(Deprecated)'}</a>, 
+              <a title='Read code from GitHub' href="https://github.com/carlitos-206/JSPortfolio/blob/main/public/uwReqs.js" target="popup" onClick={(e)=>{openPopUp(e, 'uw_1_code')}} > UW Course 1 Final</a>,
+              <a title='Read code from GitHub' href="https://github.com/carlitos-206/react-firebase-ecomerce-sdk/blob/main/sample-app-for-sdk/src/components/dataCollection/arrivalRequest.js" target="popup" onClick={(e)=>{openPopUp(e, 'uw_2_code')}}> UW Course 2 Final</a>
           </p>
         </div>
         <div className="bd_article indent">
@@ -212,18 +212,18 @@ export default function BrowserData(){
           <code className=" bd_code">
             1| ip_address = request.META.get("REMOTE_ADDR")
           </code>
-          <p className="bd_article_text bd_article_text_custom">Recognizing the immense value of this newfound knowledge, I was eager to incorporate it into my then-upcoming <a href="https://github.com/carlitos-206/mainPortfolio/blob/Main/portfolioAPP/views.py" target="popup" onClick={(e)=>{openPopUp(e, 'portfolio')}}>portfolio</a>. Beyond just incorporating it, I wrote an <a href="https://github.com/carlitos-206/useragent-Django2.2/blob/main/data-collection-views.py" target="popup" onClick={(e)=>{openPopUp(e, 'auxScript')}}>auxiliary script</a> designed for seamless integration into other Django projects. Acquiring such user-centric data opened up a strategic dimension in development, especially with respect to marketing. For instance, understanding a user's location and device type can inform marketing campaigns or decisions on whether to prioritize development of a mobile app.</p>
+          <p className="bd_article_text bd_article_text_custom">Recognizing the immense value of this newfound knowledge, I was eager to incorporate it into my then-upcoming <a title='Read code from GitHub' href="https://github.com/carlitos-206/mainPortfolio/blob/Main/portfolioAPP/views.py" target="popup" onClick={(e)=>{openPopUp(e, 'portfolio')}}>portfolio</a>. Beyond just incorporating it, I wrote an <a title='Read code from GitHub' href="https://github.com/carlitos-206/useragent-Django2.2/blob/main/data-collection-views.py" target="popup" onClick={(e)=>{openPopUp(e, 'auxScript')}}>auxiliary script</a> designed for seamless integration into other Django projects. Acquiring such user-centric data opened up a strategic dimension in development, especially with respect to marketing. For instance, understanding a user's location and device type can inform marketing campaigns or decisions on whether to prioritize development of a mobile app.</p>
           <p className="bd_article_text">As an experimental feature, I even configured my portfolio to send direct email notifications containing user details for every site visit. This real-time feedback not only provided insights on user behavior, but also offered a glimpse into the diverse landscape of devices, browsers, and even automated bots like the Facebook bot. Such encounters reshaped my perspective, transforming the internet from a mere canvas of HTML to a bustling digital city.</p>
           <CarouselBuilder images={imgCollection}/>
-          <p className="bd_article_text">This exploration didn't end with Python. During my introductory JavaScript course titled "JSCRIPT 310 B Wi 22: Programming For The Browser In JavaScript", I ventured into the nuances of JavaScript, a language I found surprisingly intuitive. While the curriculum was browser-centric, my thirst for knowledge led me to Node.js, a runtime environment for JavaScript outside the browser. This self-guided journey culminated in the creation of a <a href="#">rudimentary full-stack JavaScript application</a>, even as I grappled with the intricacies of connecting it to a database.</p>
+          <p className="bd_article_text">This exploration didn't end with Python. During my introductory JavaScript course titled "JSCRIPT 310 B Wi 22: Programming For The Browser In JavaScript", I ventured into the nuances of JavaScript, a language I found surprisingly intuitive. While the curriculum was browser-centric, my thirst for knowledge led me to Node.js, a runtime environment for JavaScript outside the browser. This self-guided journey culminated in the creation of a <a title='Read the article' href="/projects/school/uw/solo">rudimentary full-stack JavaScript application</a>, even as I grappled with the intricacies of connecting it to a database.</p>
           <p className="bd_article_text">My quest for user information was further enriched with the discovery of IPinfo.io, a service that offers user location details through a straightforward API call. This, combined with the Navigator Web API, felt like obtaining a holistic snapshot of every incoming user request.</p>
           {/* <Button className="bd_button glow-on-hover" variant="primary" type="submit" onClick={(e)=>{showReflection(e)}} >
             Click Here
           </Button> */}
-          <p className="bd_article_text">Subsequently, my exposure to <a href="#">React JS and Google Firebase: Firestore</a> during my second course was a game-changer. The pieces of the puzzle finally fit together, enabling me to capture and store the digital snapshot of every visitor.</p>
+          <p className="bd_article_text">Subsequently, my exposure to <a title='Read the article' href="/projects/school/uw/ecommerce">React JS and Google Firebase: Firestore</a> during my second course was a game-changer. The pieces of the puzzle finally fit together, enabling me to capture and store the digital snapshot of every visitor.</p>
           <img className="bd_firebase_img" src={img_0} alt="" />
           <p className="bd_article_text">With multiple storage options now at my disposal, including Mongo DB and AWS Dynamo DB, I am well-equipped to harness user data to its fullest potential in future projects.</p>
-          <p className="bd_article_text">Do you want to see your reflection? <a href="https://github.com/carlitos-206/portfolio-front-end/blob/dev2/src/components/global_functions/userDataRetrival.js" target="popup" onClick={(e)=>{openPopUp(e, 'rootCode')}} className="bd_sourceCodeLink_text">Read the source code</a> </p>
+          <p className="bd_article_text">Do you want to see your reflection? <a title='Read code from GitHub' href="https://github.com/carlitos-206/portfolio-front-end/blob/dev2/src/components/global_functions/userDataRetrival.js" target="popup" onClick={(e)=>{openPopUp(e, 'rootCode')}} className="bd_sourceCodeLink_text">Read the source code</a> </p>
           <Button className="bd_button glow-on-hover" variant="primary" type="submit" onClick={(e)=>{showReflection(e)}} >
             Click Here
           </Button>
