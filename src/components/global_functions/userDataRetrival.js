@@ -67,7 +67,7 @@ export async function UserDataRetrival() {
             'country_name': 'unknown',
             'ip_number': 'unknown',
             'isp': 'unknown',
-            'lattidue': (locationInfo.latitude !== null) ? locationInfo.latitude : 'unknown',
+            'latidue': (locationInfo.latitude !== null) ? locationInfo.latitude : 'unknown',
             'longitude': (locationInfo.longitude !== null) ? locationInfo.longitude : 'unknown',
             'accuracy': (locationInfo.accuracy !== null) ? locationInfo.accuracy : 'unknown',
           }
@@ -82,11 +82,12 @@ export async function UserDataRetrival() {
           'country_name': res.country_name,
           'ip_number': res.ip_number,
           'isp': res.isp,
-          'lattidue': (locationInfo.latitude !== null) ? locationInfo.latitude : 'unknown',
+          'latidue': (locationInfo.latitude !== null) ? locationInfo.latitude : 'unknown',
           'longitude': (locationInfo.longitude !== null) ? locationInfo.longitude : 'unknown',
           'accuracy': (locationInfo.accuracy !== null) ? locationInfo.accuracy : 'unknown',
         }
 
+        // console.log('This is the final object', complete);
 
         
         // this is complete response
@@ -237,7 +238,7 @@ export async function UserDataRetrival() {
           country_name: publicData.res.country_name,
           ip_number: publicData.res.ip_number,
           isp: publicData.res.isp,
-          latitude: publicData.res.lattidue,
+          latitude: publicData.res.latidue,
           longitude: publicData.res.longitude,
           accuracy: publicData.res.accuracy,
         }
