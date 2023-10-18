@@ -1,0 +1,74 @@
+@media screen and (min-width: 1440px) {
+    .contactContainer{
+        border: solid 1px black;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        width: 50%;
+        left: 25%;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      
+      .contactHeader{
+        display: flex;
+        justify-content: center;
+        font-size: xx-large
+      }
+      .contactForm{
+        display: flex;
+        justify-content: center;
+        /* width: 50%; */
+        position: relative;
+        /* left: 10%; */
+        /* top: 30px; */
+      }
+      .test_a{
+        width: 200px;
+        outline: solid green 2px;
+      }
+      .contactMessageBox{
+        position: relative;
+        left: 1.5%;
+      }
+      .contactReasonContainer{
+        position: relative;
+        left: 10%
+      }
+      .contactSubmitBtn{
+        position: relative;
+        /* top: -80px; */
+        width: 300px;
+        /* left: 55% */
+      }
+      .externalConnection{
+        display: flex;
+        justify-content: center;
+      }
+      .contactHeadshot{
+        width: 190px;
+        height: 150px;
+        border-radius: 100%;
+        margin: 10px;
+      }
+      
+      .externalButtons{
+        margin: 10px;
+      }
+      .emailBtn{
+        width: 200px;
+        height: 60px;
+        font-size: 30px;
+      }
+      .linkedInIcon{
+        width: 200px;
+      }
+      .youtubeIcon{
+        width: 200px;
+        height: 49px;
+        transform: scale(1.05)
+      }
+      
+      
+      
+}

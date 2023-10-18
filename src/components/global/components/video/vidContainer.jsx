@@ -1,4 +1,5 @@
 import React from "react";
+import "./vidContainer.css";
 export default function VideoContainer() {
   return (
     <>

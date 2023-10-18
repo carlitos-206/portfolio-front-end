@@ -13,9 +13,9 @@ import {  Routes, Route } from 'react-router-dom'
 // COMPONENTS 
 
   // Global Components
-    import TopMenu from './components/global_components/navbar';
-    import Footer from './components/global_components/footer';
-    import VideoContainer from './components/vidContainer';
+    import TopMenu from './components/global/components/navBar/navbar';
+    import Footer from './components/global/components/footer/footer';
+    import VideoContainer from './components/global/components/video/vidContainer';
 
   // Landing Page Components
     import CUBE_ZERO from './components/section_landing/cube_0';
@@ -45,7 +45,7 @@ import {  Routes, Route } from 'react-router-dom'
  
   // Resume Section
     import Resume from './components/section_resume/resume';
-    import ChatContainer from './components/section_resume/aws_chatgpt_interface';
+    import ChatContainer from './components/global/components/openAi/customGPT/aws_chatgpt_interface';
 
   // Community Section
     import Community from './components/section_community/community';

@@ -1,9 +1,11 @@
 import React  from "react";
 import CarouselBuilder from "./carousel";
-import { imgCollection } from "../../../images/userAgentEmails/collection";
-import img_0 from "../../../images/userAgentEmails/firbaseCollection/img_0.png"
+import { imgCollection } from "../../../../images/userAgentEmails/collection";
+import img_0 from "../../../../images/userAgentEmails/firbaseCollection/img_0.png"
 import Button from 'react-bootstrap/Button';
-import {UserDataRetrival} from '../../../global_functions/userDataRetrival'
+import {UserDataRetrival} from '../../../global/functions/userDataRetrival'
+import "./browserData.css"
+
 export default function BrowserData(){
 
 

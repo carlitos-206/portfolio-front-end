@@ -1,6 +1,7 @@
 import React from "react";
-import apiGatewayLogo from "../../../images/tech/awsAPIGateway.png"
+import apiGatewayLogo from "../../../../images/tech/awsAPIGateway.png"
 import axios from "axios";
+import "./openAi_interface.css"
 export default function OpenAIArticle(){
 
     // const[chatInput, setChatInput] = useState(null);

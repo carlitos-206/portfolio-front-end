@@ -1,6 +1,7 @@
 import React from "react";
 import Timeline from "./timelineComponent/timeline";
-import zion from "../../../images/ui_needs/zion-bg.jpg"
+import zion from "../../../../images/ui_needs/zion-bg.jpg"
+import "./portfolio.css"
 export default function PortfolioPage() {
   return (
     <>

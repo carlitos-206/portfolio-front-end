@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-import python from '../images/tech/python.png';
-import javascript from '../images/tech/JavaScript.png';
-import lambda from '../images/tech/lambda.png';
-import apigateway from '../images/tech/apiGateway.jpg';
-import reactFirebase from '../images/tech/reactFirebase.png';
-import mongo from '../images/tech/mongodb.png';
+import python from '../../images/tech/python.png';
+import javascript from '../../images/tech/JavaScript.png';
+import lambda from '../../images/tech/lambda.png';
+import apigateway from '../../images/tech/apiGateway.jpg';
+import reactFirebase from '../../images/tech/reactFirebase.png';
+import mongo from '../../images/tech/mongodb.png';
 
 
 

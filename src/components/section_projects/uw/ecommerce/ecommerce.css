@@ -1,0 +1,49 @@
+@media screen and (min-width: 1440px) {
+    .uwEcommerceContainer{
+        position: relative;
+        top: 60px;
+        margin-bottom: 200px;
+    
+      }
+      
+      #storeLogoImg{
+        position: relative;
+        height: 10vh;
+        top: 1.75vh;
+      }
+    
+      .uwEcommerceTitle{
+        border: groove rgb(7, 109, 177) 1rem;
+        background-color: rgba(30, 32, 51, 0.227);
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        left: 25%;
+        
+      }
+        
+      .uwEcommerceBody{
+        position: relative;
+        left: 15%;
+        width: 70%;
+        font-size: 18px;
+      }
+      .uwEcommerceText{
+        font-size: 20px;
+        margin: 15px 0px 15px;
+      }
+      .uwEcommerceCode{
+        border: solid 2px rgb(0, 0, 0);
+        width: 80%;
+        position: relative;
+        left: 10%;
+        margin: 15px 0px 15px ;
+        padding: 5px;
+      }
+    
+    
+}

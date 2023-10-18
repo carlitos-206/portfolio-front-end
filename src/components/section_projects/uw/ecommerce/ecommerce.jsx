@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../../../images/ui_needs/storeLogo.png";
-import grade from "../../../images/ui_needs/ecommerceGrade.png";
+import "./ecommerce.css";
+import logo from "../../../../images/ui_needs/storeLogo.png";
+import grade from "../../../../images/ui_needs/ecommerceGrade.png";
 export default function UwEcommerceProject() {
     const codeString = `
 // Functions that hold the Firebase Storage and Firestore connection Logic

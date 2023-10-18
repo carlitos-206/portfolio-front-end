@@ -1,6 +1,7 @@
 import React from "react";
-import dojoGroupProjectLogo from "../../../images/ui_needs/dojoGroupProjectLogo.png";
-import dojoCert from "../../../images/ui_needs/dojoCert.png";
+import dojoGroupProjectLogo from "../../../../images/ui_needs/dojoGroupProjectLogo.png";
+import dojoCert from "../../../../images/ui_needs/dojoCert.png";
+import "./dojoGroupProject.css";
 export default function DojoGroupProject() {
   
   const openPopUp = (e, source)=>{

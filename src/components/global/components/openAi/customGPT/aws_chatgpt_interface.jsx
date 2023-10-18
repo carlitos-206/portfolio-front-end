@@ -1,7 +1,7 @@
 import React from "react";
-import apiGatewayLogo from "../images/tech/awsAPIGateway.png"
+import apiGatewayLogo from "../../../../../images/tech/awsAPIGateway.png"
 import axios from "axios";
-
+import "./aws_chatgpt_interface.css";
 export default function ChatContainer() {
   // const[chatInput, setChatInput] = useState(null);
   

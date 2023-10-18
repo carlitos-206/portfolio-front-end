@@ -1,10 +1,11 @@
 // This file holds the Resume section
 import React from "react";
-const resume = require('../files/Resume.pdf')
+import './resume.css'
+const resume = require('../global/database/files/Resume.pdf')
 
 // The html comes from google docs but have been modified
 export default function Resume(){
-  if(window.innerWidth<540){
+  if(window.innerWidth<1440){
     return(
       <div id="resume" className="elevate">
             <div className="c15 c52 doc-content">

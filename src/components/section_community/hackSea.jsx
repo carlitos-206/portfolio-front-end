@@ -1,6 +1,6 @@
 import React from "react";
-import { seaHack, people } from "../community/communityCollection";
-import CarouselBuilder from "../global_components/carouselBuilder";
+import { seaHack, people } from "../../images/community/communityCollection";
+import CarouselBuilder from "../global/components/carousel/carouselBuilder";
 import TeamCardBuilder from "./teamCardBuilder";
 
 export default function HackSea() {
