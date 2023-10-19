@@ -1,8 +1,8 @@
 import React from "react";
-import { aiHack2, people } from "../../images/community/communityCollection";
-import CarouselBuilder from "../global/components/carousel/carouselBuilder";
-import TeamCardBuilder from "./teamCardBuilder";
-
+import { aiHack2, people } from "../../../images/community/communityCollection";
+import CarouselBuilder from "../../global/components/carousel/carouselBuilder";
+import TeamCardBuilder from "../../global/components/teamCardBuilder/teamCardBuilder";
+import "./aiHackathon2.css";
 export default function aiHackathon2(){
   console.log(aiHack2)
   return(

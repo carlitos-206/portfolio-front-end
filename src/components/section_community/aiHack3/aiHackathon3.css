@@ -1,0 +1,156 @@
+@media screen and (min-width: 1440px) {
+    .learning4youBack{
+        position: absolute;
+        position: fixed;
+        top: 100px;
+        left: 5px;
+        z-index: 6;
+        /* background-color: #000; */
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+      }
+      .l4yATagBack{
+        color: #000;
+        font-family: Merriweather;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .invisibleSpace{
+        background-color: white;
+        color: white;
+        font-size: 13px;
+      }
+      
+      .learnHeading{
+        position: relative;
+        top:70px;
+        display: flex;
+        justify-content: center;
+        font-weight: 100;
+        font-size: 42px;
+        font-family:  Merriweather; 
+        font-size: 38px; 
+        font-style: normal
+      }
+      
+      .learning4youBody{
+        width: 100%;
+        height: min-content;
+        position: relative;
+        top: 100px;
+        display: flex;
+      }
+      
+      .learning4youText{
+        font-size: 18px;
+        font-family:  Merriweather; 
+        padding: 2% 2% 2% 4%;
+        width: 50%;
+      }
+      .learning4youPPT{
+        border: green 2 px solid;
+        width: 50%;
+        height: 590px;
+        padding: 0% 2% 2% 0%;
+        position: relative;
+        top: 50px;
+        
+      }
+      .aihack3_media_titles{
+        position: relative;
+        font-size: 16px;
+        font-family: Merriweather;
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+      }
+      .aiHack3YTVid{
+        width: 100%;
+        z-index: +6;
+      }
+      
+      .teamTitle_l4y{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-family: Merriweather;
+      }
+      
+      .learning4youMedia{
+        padding: 0% 2% 2% 0%;
+        display: flex;
+        position: relative;
+        top: 200px;
+        
+      }
+      
+      .teamL4Y{
+        width: 100%;
+        position: relative;
+      
+      }
+      
+      .teamPic_l4y{
+        margin: 10px;
+        width: 250px;
+        border-radius: 50%;
+      }
+      /* Special Heading */
+      
+      .h1_sixth { position: relative; }
+      
+      .h1_sixth:before,
+      .h1_sixth:after {
+          content: '[';
+          display: inline-block;
+          position: relative;
+          top: 1px;
+          height: 100%;
+          color: tomato;
+          
+          transition: all 0.5s ease;
+      }
+      
+      .h1_sixth:after { content: ']'; }
+      
+      .h1_sixth:hover:before { 
+          transform: translateX(-30px);
+      }
+      
+      .h1_sixth:hover:after { 
+          transform: translateX(30px);
+      }
+      
+      
+      .h1_sixth_back { position: relative; }
+      
+      .h1_sixth_back:before,
+      .h1_sixth_back:after {
+          content: '[';
+          display: inline-block;
+          position: relative;
+          top: 1px;
+          height: 100%;
+          color: tomato;
+          
+          transition: all 0.5s ease;
+      }
+      
+      .h1_sixth_back:after { content: ']'; }
+      
+      .h1_sixth_back:hover:before { 
+          transform: translateX(-5px);
+      }
+      
+      .h1_sixth_back:hover:after { 
+          transform: translateX(5px);
+      }
+      
+      
+      
+      
+      
+      
+      
+}

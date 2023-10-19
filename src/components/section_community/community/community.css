@@ -1,0 +1,161 @@
+@media screen and (min-width: 1440px) {
+    
+
+    .communityContainer{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 50px;
+        padding: 20px;
+        margin-bottom: 200px;
+      }
+      .hackathonHeader{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+      }
+      
+      
+      /* headings for community */
+      .ch_div {
+        text-align: center;
+        position: relative;
+        margin: 20px auto;
+      }
+      .ch_h2 {
+        font-family: arial;
+        color: #333;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 30px;
+        /* text-transform: uppercase; */
+      }
+      .span {
+        display: inline-block;
+        position: absolute;
+        background: rgb(52,58,64);
+        height: 3px;
+        left: 50%;
+      }
+      .span.top {
+        width: 70px;
+        top: 20px;
+      }
+      .span.bottom {
+        width: 120px;
+        top: 35px;
+      }
+      .span.left {
+        transform: translateX(-250px);
+      }
+      .span.bottom.left {
+        transform: translateX(-300px);
+      }
+      .span.right {
+        transform: translateX(180px);
+      }
+      
+      
+      
+      
+      .hackathonBtnsContainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: min-content;
+      }
+      .hackathonImgs{
+        width: 420px;
+      }
+      
+      .hackathonTextBody{
+        /* background-color: #1155cc; */
+        width: 50%;
+        height: min-content;
+        margin-left: 20px;
+        font-size: 18px;
+      }
+      .carouselContainer{
+        margin-bottom: 100px ;
+        /* background-color: #000; */
+        width: 360px;
+      }
+      .carouselImageContainer{
+        width: min-content;
+      }
+      .conatinerCara{
+        width: 200px;
+      }
+      .carouselImg{
+        width: 360px;
+      }
+      
+      .coachingContainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: min-content;
+      }
+      .coachingMedia{
+        width: min-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .coachVid{
+        position: relative;
+        left: 50px ;
+      }
+      .cheriRecomenation_community{
+        width: 760px;
+        position: relative;
+        top: -25px
+      }
+      .cheriMoreCommunity{
+        position: relative;
+        top: 25%;
+        /* background-color: #000; */
+        left: 75%;
+        width: fit-content;
+        z-index: 4;
+        padding: 5px;
+      }
+      .carouselImg_coaching{
+        width: 400px;
+      }
+      .communityProjectReadMoreBtns{
+        display: flex;
+        position: relative;
+        top: 20px;
+        justify-content: flex-start;
+      }
+      .communityProjectRenderedBtn{
+        position: relative;
+        margin-right:60px ;
+      }
+      .techEventsContainer{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: min-content;
+      }
+      .techEventMedia{
+        position: relative;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction:column ;
+      }
+      .techEventImg{
+        width: 390px;
+        margin: 20px 0px 5px 0px;
+      }
+      .externalCommunityBtn{
+        /* background-color: #000; */
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: 40px;
+      }
+    
+}

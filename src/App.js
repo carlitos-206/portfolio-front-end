@@ -48,10 +48,10 @@ import {  Routes, Route } from 'react-router-dom'
     import ChatContainer from './components/global/components/openAi/customGPT/aws_chatgpt_interface';
 
   // Community Section
-    import Community from './components/section_community/community';
-    import HackSea from './components/section_community/hackSea';
-    import AiHackathon2 from './components/section_community/aiHackathon2';
-    import AiHackathon3 from './components/section_community/aiHackathon3';
+    import Community from './components/section_community/community/community';
+    import HackSea from './components/section_community/hackSea/hackSea';
+    import AiHackathon2 from './components/section_community/aiHack2/aiHackathon2';
+    import AiHackathon3 from './components/section_community/aiHack3/aiHackathon3';
 
 
   // Contact Section

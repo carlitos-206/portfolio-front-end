@@ -1,7 +1,8 @@
 import React from "react";
-import { people } from "../../images/community/communityCollection";
+import { people } from "../../../images/community/communityCollection";
 // import CarouselBuilder from "./carouselBuilder";
-import TeamCardBuilder from "./teamCardBuilder";
+import TeamCardBuilder from "../../global/components/teamCardBuilder/teamCardBuilder";
+import "./aiHackathon3.css";
 export default function AiHackathon3() {
   const linkOfTheWebsiteUserCame = document.referrer
   console.log(linkOfTheWebsiteUserCame)

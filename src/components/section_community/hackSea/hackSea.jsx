@@ -1,8 +1,8 @@
 import React from "react";
-import { seaHack, people } from "../../images/community/communityCollection";
-import CarouselBuilder from "../global/components/carousel/carouselBuilder";
-import TeamCardBuilder from "./teamCardBuilder";
-
+import { seaHack, people } from "../../../images/community/communityCollection";
+import CarouselBuilder from "../../global/components/carousel/carouselBuilder";
+import TeamCardBuilder from "../../global/components/teamCardBuilder/teamCardBuilder";
+import "./hackSea.css";
 export default function HackSea() {
   return (
     <>

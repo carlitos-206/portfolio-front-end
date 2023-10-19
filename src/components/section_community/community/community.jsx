@@ -1,11 +1,11 @@
 import React from "react";
-import { seaHack, aiHack2, aiHack3, techEvent } from "../../images/community/communityCollection";
-import cheriRecomendation from "../../images/community/coaching/professorTestimony.png";
-import CarouselBuilder from "../global/components/carousel/carouselBuilder";
+import { seaHack, aiHack2, aiHack3, techEvent } from "../../../images/community/communityCollection";
+import cheriRecomendation from "../../../images/community/coaching/professorTestimony.png";
+import CarouselBuilder from "../../global/components/carousel/carouselBuilder";
 import Button from 'react-bootstrap/Button';
-import linkin from '../../images/contact/linkedin.png';
-import youtube from '../../images/contact/youtube.png';
-
+import linkin from '../../../images/contact/linkedin.png';
+import youtube from '../../../images/contact/youtube.png';
+import './community.css';
 
 
 export default function Community() {
