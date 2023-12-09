@@ -1,0 +1,119 @@
+.landing-section-4-contianer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding: 20px 0px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+.resume-title-color{
+  color: #2070c7
+}
+.resume-top-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.landing-section-4-left-content-continater{
+  width: calc( 100% * (2/3) );
+  padding-bottom: 20px;
+}
+.resume-name-container, 
+.resume-professional-container, 
+.resume-exp-title-container,
+.resume-exp-content-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-name-container{
+  font-size: 24px;
+}
+.resume-exp-title-container{
+  margin-top: 20px;
+}
+
+.resume-professional-container{
+ margin-top: 50px;
+}
+.resume-exp-content-title{
+  margin-top: 20px;
+}
+.resume-exp-list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  line-height: 30px;
+  margin-top: 10px;
+  padding: 0% 15%;
+}
+.resume-exp-list-item{
+  font-size: 24px;
+}
+.landing-section-4-right-content-container{
+  width: calc( 100% * (1/3) );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+.resume-quick-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.resume-education-container{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resume-education-logo{
+  width: 200px;
+
+}
+.resume-eduction-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+}
+.resume-education-item-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5px;
+}
+
+.resume-container-bottom-1{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  width: 100%;
+}
+.resume-other{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  font-weight: normal;
+}
+.resume-container-bottom-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.resume-section-front-end-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}

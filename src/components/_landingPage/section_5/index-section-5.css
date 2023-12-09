@@ -1,0 +1,16 @@
+.landing-section-5-contianer{
+  background-color: #2070c7;
+  color: white;
+  font-size: 19px;
+  font-family: 'Consolas';
+  margin-bottom: 20px;
+}
+
+.resume-download-link{
+  color: rgb(238, 255, 0);
+  text-decoration: underline !important;
+}
+.resume-download-link:hover{
+  color: rgb(0, 255, 0);
+  cursor: pointer;
+}
