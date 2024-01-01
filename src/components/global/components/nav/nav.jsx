@@ -38,7 +38,7 @@ const Nav = () => {
           <h1 className="nav_links" >Resume</h1>
         </Link>
         <Link
-          to="section-6"
+          to="section-5"
           spy={true}
           smooth={true}
           duration={500}
@@ -46,7 +46,16 @@ const Nav = () => {
           >
         <h1 className="nav_links" >Community</h1>
         </Link>
+        <Link
+          to="section-6"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-50}
+          >
         <h1 className="nav_links" >Contact</h1>
+        </Link>
+
         {/* <h1 className="nav_links" >Extra</h1> */}
       </div>
     </div>

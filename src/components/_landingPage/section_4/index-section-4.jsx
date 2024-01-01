@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import dojologo from "../../global/images/icons/tech/dojo-logo.svg";
 import uwlogo from "../../global/images/icons/tech/uw-logo.png";
-import frontMain from "../../global/images/icons/tech/front-main.png";
 import "./index-section-4.css";
 
 const LandingSection4 = () => {
@@ -14,8 +13,9 @@ const LandingSection4 = () => {
         <div className="landing-section-4-left-content-continater">
           <div className="resume-name-container">
             <h1>Carlos R. Cáceres Martínez</h1>
+            <br />
             <h3>Full Stack Python & Full Stack Javascript</h3>
-            <h5>Available 2 weeks from hiring date</h5>
+            {/* <h5>Available 2 weeks from hiring date</h5> */}
           </div>
           <div className="resume-professional-container">
             <h2 className="resume-section-title resume-title-color">Professional Expirience</h2>
@@ -112,34 +112,225 @@ const LandingSection4 = () => {
               <p className="italic">Adaptability</p>
             </div>
             <div className="resume-other resume-other-languages">
-              <h2 className="resume-title-color">Languages</h2>
-              <p className="italic">English</p>
-              <p className="italic">Español</p>
+              <h2 className="resume-title-color">Spoken Languages</h2>
+              <p className="italic">English - Fluent</p>
+              <p className="italic">Español - Fluent</p>
             </div>     
       </div>
+
       <div className="resume-container-bottom-2">
         <div className="resume-container-bottom-2-main-title">
           <h2 className="resume-title-color">Tech Skills</h2>
+          <br />
+          <h3 className="resume-section-front-end-title">- Front End -</h3>
         </div>
         <div className="resume-section-front-end-container">
-          <h3 className="resume-section-front-end-title">- Front End -</h3>
-          <div className="resume-section-front-end-table-container">
-            <div>
+          
+            <div className="resume-section-front-end-table-container">
               <h4 className="resume-section-front-end-table-title">HTML 5</h4>
-              <ul className="resume-section-front-end-table-list">
-                <li>Templates</li>
-                <li>
-                  <ul>
-                    <li>
-                      <p>Bootstrap</p>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+              <p>Templates:</p>
+              <p className="italic gray">Jinja2</p>
+              <p className="italic gray">View Engine EJS</p>
             </div>
+
+            <div className="resume-section-front-end-table-container">
+              <h4 className="resume-section-front-end-table-title">CSS3</h4>
+              <p>Bootstrap</p>
+              <p>React Bootstrap</p>
+              <p>Pure CSS</p>
+              <p>Animate CSS</p>
+              <p>Tailwind CSS</p>
+              <p>Material UI</p>
+            </div>
+
+            <div className="resume-section-front-end-table-container" >
+              <h4 className="resume-section-front-end-table-title">JavaScript</h4>
+              <p>Vanilla JS ES6+</p>
+              <p>React.js</p>
+              <p>React Native</p>
+              <p>jQuery</p>
+              <p>JSON</p>
+            </div>
+
+            <div className="resume-section-front-end-table-container">
+              <h4 className="resume-section-front-end-table-title">Wireframes</h4>
+              <p>Figma</p>
+              <p>Balsamiq</p>
+            </div>
+
+            <div className="resume-section-front-end-table-container">
+              <h4 className="resume-section-front-end-table-title">Web Interfaces</h4>
+              <p>CDN</p>
+              <p>AJAX</p>
+              <p>XHMLHttpRequest</p>
+              <p>Fetch API</p>
+              <p>Axios</p>
+            </div>
+
           </div>
         </div>
-      </div>
+        <div className="resume-container-bottom-3">
+        <div className="resume-container-bottom-2-main-title">
+          <br />
+          <h3 className="resume-section-front-end-title">- Backend -</h3>
+        </div>
+        <div className="resume-section-front-end-container-2">
+          
+            <div className="resume-section-front-end-table-container">
+              <h4 className="resume-section-front-end-table-title">Python</h4>
+              <p>Django</p>
+              <p>Flask </p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">JavaScript</h4>
+              <p>Express.js</p>
+              <p>Node.js</p>
+            </div>
+        </div>
+    </div>
+    <div className="resume-container-bottom-4">
+        <div className="resume-container-bottom-2-main-title">
+          <br />
+          <h3 className="resume-section-front-end-title">- Serverless -</h3>
+        </div>
+        <div className="resume-section-front-end-container-4">
+          
+            <div className="resume-section-front-end-table-container">
+            <br />
+              
+              <h4 className="resume-section-front-end-table-title">Google Firebase for Python & JavaScript</h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">AWS API Gateway in JavaScript</h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">&</h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">AWS Lambda in Python & JavaScript </h4>
+
+            </div>
+        </div>
+    </div>
+    <div className="resume-container-bottom-3">
+        <div className="resume-container-bottom-2-main-title">
+          <br />
+          <h3 className="resume-section-front-end-title">- Database -</h3>
+        </div>
+        <div className="resume-section-front-end-container-5">
+          
+            <div className="resume-section-front-end-table-container">
+              <h4 className="resume-section-front-end-table-title">Relational</h4>
+              <p>Python ORM (SQLite3)</p>
+              <p>MySQL (w/ MySQL Workbench) </p>
+              <p>AWS Dynamo DB</p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">Non-Relational</h4>
+              <p>Google Firebase:</p>
+              <p className="italic gray">Firestore</p>
+              <p className="italic gray">Storage</p>
+              <p>Mongo DB</p>
+            </div>
+        </div>
+    </div>
+    <div className="resume-container-bottom-4">
+        <div className="resume-container-bottom-2-main-title">
+          <br />
+          <h3 className="resume-section-front-end-title">- Deployment -</h3>
+        </div>
+        <div className="resume-section-front-end-container-4">
+          
+            <div className="resume-section-front-end-table-container">
+            <br />
+              
+              <h4 className="resume-section-front-end-table-title">AWS EC2: Linux Ubuntu </h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">Firebase Hosting</h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">Netlify</h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">Ngrok</h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">&</h4>
+              <br />
+              <h4 className="resume-section-front-end-table-title">Heroku</h4>
+            </div>
+        </div>
+    </div>
+
+    <div className="resume-container-bottom-4">
+        <div className="resume-container-bottom-2-main-title">
+          <br />
+          <h3 className="resume-section-front-end-title">- Testing -</h3>
+        </div>
+        <div className="resume-section-front-end-container-4">
+          
+            <div className="resume-section-front-end-table-container">
+            <br />
+              
+              <h4 className="resume-section-front-end-table-title">JEST & ESLint</h4>
+            </div>
+        </div>
+    </div>
+    <div className="resume-container-bottom-3">
+        <div className="resume-container-bottom-2-main-title">
+          <br />
+          <h3 className="resume-section-front-end-title">- Resources -</h3>
+        </div>
+        <div className="resume-section-front-end-container-5">
+          
+            <div className="resume-section-front-end-table-container">
+              <h4 className="resume-section-front-end-table-title">Operating Systems</h4>
+              <p>Linux:</p>
+              <p className="italic gray">Ubuntu 18.04LTS+</p>
+              <p>Windows:</p>
+              <p className="italic gray">Command Prompt</p>
+              <p className="italic gray">Git Bash</p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">Version Control</h4>
+              <p>GitHub</p>
+              <p>Google Docs</p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">IDE</h4>
+              <p>VS Code</p>
+              <p>VIM</p>
+            </div>
+        </div>
+    </div>
+    <div className="resume-container-bottom-3">
+        <div className="resume-container-bottom-2-main-title">
+          <br />
+          <h3 className="resume-section-front-end-title">- Other -</h3>
+        </div>
+        <div className="resume-section-front-end-container-6">
+          
+            <div className="resume-section-front-end-table-container">
+              <h4 className="resume-section-front-end-table-title">Video Editing</h4>
+              <p>Adobe Premier Pro</p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">Photo Editing</h4>
+              <p>Adobe Light Room</p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">Illustration</h4>
+              <p>Adobe Illustrator</p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">AI Video Generation</h4>
+              <p>Stable Diffusion Web UI</p>
+              <p className="italic gray">Automatic 1111</p>
+            </div>
+            <div className="resume-section-front-end-table-container backend-language-container-js">
+              <h4 className="resume-section-front-end-table-title">AI Image Generation</h4>
+              <p>OpenAI</p>
+              <p className="italic gray">Dall-e API</p>
+              <p>Stable Diffusion Web UI</p>
+              <p className="italic gray">Image 2 Image</p>
+              <p className="italic gray">Text 2 Image</p>
+            </div>
+        </div>
+    </div>
     </div>
   );
 }

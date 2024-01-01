@@ -28,7 +28,21 @@ code {
   color: white;
 }
 
+.gray{
+  color: #5a5c69;
+}
 
+.indent{
+  margin-left: 20px;
+}
+
+.indent-2{
+  margin-left: 40px;
+}
+
+.indent-3{
+  margin-left: 60px;
+}
 
 /* Animation */
 
