@@ -17,12 +17,20 @@ export default function LandingSection6() {
     e.preventDefault();
     // eslint-disable-next-line
     const emailregex = new RegExp('^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$');
+    
+    let emailInput = document.getElementsByClassName("email-input")[0];
+    let emailErrorMessage = document.getElementsByClassName("email-error-message")[0];
+    let nameInput = document.getElementsByClassName("name-input")[0];
+    let nameErrorMessage = document.getElementsByClassName("name-error-message")[0];
 
+    let fields = document.getElementsByClassName("form-input");
     if (agreement) {
       if(emailregex.test(email) && name !== "") {
         if(reason === "") {
           setReason("other");
         }
+        emailErrorMessage.setAttribute("style", "display: none;");
+        nameErrorMessage.setAttribute("style", "display: none;");
         const formValues = {
           name: name,
           email: email,
@@ -31,7 +39,10 @@ export default function LandingSection6() {
           agreement: agreement,
           date: new Date().toLocaleString()
         }
-
+        // console.log(formValues);
+        for(let i = 0; i < fields.length; i++) {
+          fields[i].value = "";
+        }
         console.log("email sent");
         setName("");
         setEmail("");
@@ -41,10 +52,16 @@ export default function LandingSection6() {
       }
       else {
         if(emailregex.test(email) === false) {
-          alert("Please enter a valid email address");
+          emailErrorMessage.setAttribute("style", "display: block; color: red;");
+          emailInput.addEventListener("focus", (e) => {
+            e.target.removeAttribute("style");
+          })
         }
         if(name === "") {
-          alert("Please enter your name");
+          nameErrorMessage.setAttribute("style", "display: block; color: red;");
+          nameInput.addEventListener("focus", (e) => {
+            e.target.removeAttribute("style");
+          })
         }
 
       }
@@ -63,20 +80,26 @@ export default function LandingSection6() {
             required
             id="outlined-required"
             label="Enter your name"
-            className="form-input"
+            className="form-input name-input"
             onChange={(e) => setName(e.target.value)}
           />
+          <p className="name-error-message" style={{display:'none'}}>
+            Please enter your name
+          </p>
         </div>
         <div className="form-group">
           <TextField
             required
             id="outlined-required"
             label="Enter your Email"
-            className="form-input"
+            className="form-input email-input"
             onChange={(e) => setEmail(e.target.value)}
           />        
+          <p className="email-error-message" style={{display:'none'}}>
+            Please enter a valid email
+          </p>
         </div>
-        <div className="form-group">
+        <div className="form-group-select">
           <label htmlFor="subject">Reason for contact: &nbsp;&nbsp;</label>
           <select onChange={(e)=>{setReason(e.target.value)}} className="form-select" type="text" id="subject" placeholder="Enter your subject" >
             <option value="other" selected>General Inquiry</option>

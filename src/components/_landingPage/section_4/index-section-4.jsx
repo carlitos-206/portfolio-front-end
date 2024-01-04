@@ -60,9 +60,7 @@ const LandingSection4 = () => {
           <div className="resume-quick-contact">
             <p className="italic resume-title-color">carloscaceres041@gmail.com</p>
             <p className="italic">206-613-9348</p>
-            <p className="italic">Github: carlitos-206</p>
-            <p className="italic">LinkedIn: carlitos206</p>
-            <p className="italic">Located in Seattle, WA</p>
+            <p className="italic">Located in Seattle, Washington</p>
           </div>
           <div className="resume-education-container">
               <h2 className="resume-title-color">Education</h2>
@@ -318,14 +316,14 @@ const LandingSection4 = () => {
             </div>
             <div className="resume-section-front-end-table-container backend-language-container-js">
               <h4 className="resume-section-front-end-table-title">AI Video Generation</h4>
-              <p>Stable Diffusion Web UI</p>
+              <p>Stable Diffusion</p>
               <p className="italic gray">Automatic 1111</p>
             </div>
             <div className="resume-section-front-end-table-container backend-language-container-js">
               <h4 className="resume-section-front-end-table-title">AI Image Generation</h4>
               <p>OpenAI</p>
               <p className="italic gray">Dall-e API</p>
-              <p>Stable Diffusion Web UI</p>
+              <p>Stable Diffusion</p>
               <p className="italic gray">Image 2 Image</p>
               <p className="italic gray">Text 2 Image</p>
             </div>

@@ -67,7 +67,7 @@
 
 }
 .resume-education-container{
-  margin-top: 60px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,20 +127,20 @@
 .resume-section-front-end-container{
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 80%;
   margin-top: 20px;
 }
 .resume-section-front-end-container-2{
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 40%;
   margin-top: 20px;
   margin-left: 15px;
 }
 .resume-section-front-end-container-6{
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 50%;
   margin-top: 20px;
   margin-left: 15px;
 }
@@ -155,9 +155,7 @@
 .resume-section-front-end-container-6{
   display: flex;
   justify-content: center;
-  width: 80%;
-  margin-top: 20px;
-  margin-left: 15px;
+  width: 93%;
 }
 
 .backend-language-container-js{
