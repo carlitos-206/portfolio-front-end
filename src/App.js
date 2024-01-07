@@ -10,6 +10,9 @@ import Home from "./components/_landingPage/home"
   import DojoSoloProject from './components/_projects/dojo/solo';
   import DojoGroupProject from './components/_projects/dojo/group';
 
+  // UW Projects
+  import UwEcommerceProject from './components/_projects/uw/e-commerce';
+
 function App() {
 
   return (
@@ -18,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/coding-dojo-solo-project" element={<DojoSoloProject />} />
         <Route path="/coding-dojo-group-project" element={<DojoGroupProject />} />
+        <Route path='/university-of-washington-eCommerce-project' element={<UwEcommerceProject />} />
       </Routes>
     </div>
   );

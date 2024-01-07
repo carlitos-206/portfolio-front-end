@@ -12,6 +12,9 @@ export default function LandingSection3(){
       case 'dojo-group':
         window.open('/coding-dojo-group-project', '_self')
         break;
+      case 'uw-ecommerce':
+        window.open('/university-of-washington-eCommerce-project', '_self')
+        break;
       default:
         console.log('default')
     }
@@ -55,7 +58,7 @@ export default function LandingSection3(){
         <p className="landing_section_3_text_block">&nbsp;&nbsp;46|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link">Solo Project: JS Portfolio</span></p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;47|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # JavaScript - Node.js + Express.js</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;48|;  </p>
-        <p className="landing_section_3_text_block">&nbsp;&nbsp;49|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link">Solo Project: E-Commerce Site</span></p>
+        <p className="landing_section_3_text_block">&nbsp;&nbsp;49|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link" onClick={(e)=>{projectRouter(e, 'uw-ecommerce')}}>Solo Project: E-Commerce Site</span></p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;50|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # JavaScript - React.js + Google Firebase</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;51|;  </p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;52|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link">Group Project: Washington State Wildfire Tracker</span></p>
