@@ -11,7 +11,7 @@ import "./home.css"
 const Home = () => {
   return (
     <div className="landingPage_container">
-      <Nav />
+      <Nav source={'landingPage'} />
       <LandingSection1 />
       <LandingSection2 />
       <LandingSection3 />

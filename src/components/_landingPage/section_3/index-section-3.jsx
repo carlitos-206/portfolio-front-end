@@ -3,6 +3,22 @@ import "./index-section-3.css";
 import gitPurple from "../../global/images/icons/tech/github-purple.jpeg";
 
 export default function LandingSection3(){
+  const projectRouter = (e, project)=>{
+    console.log('projectRouter', project)
+    switch(project){
+      case 'dojo-solo':
+        window.open('/coding-dojo-solo-project', '_self')
+        break;
+      case 'dojo-group':
+        window.open('/coding-dojo-group-project', '_self')
+        break;
+      default:
+        console.log('default')
+    }
+  }
+
+
+
   return (
     <div id="section-3" >
       <div className="projects-github-button-container" >
@@ -28,10 +44,10 @@ export default function LandingSection3(){
         <p className="landing_section_3_text_block">&nbsp;&nbsp;35|;  </p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;36|;  &nbsp;&nbsp;&nbsp;&nbsp; + The Coding Dojo:</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;37|;  </p>
-        <p className="landing_section_3_text_block">&nbsp;&nbsp;38|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link">Solo Project: Party Connection</span></p>
+        <p className="landing_section_3_text_block">&nbsp;&nbsp;38|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link" onClick={(e)=>{projectRouter(e, 'dojo-solo')}}>Solo Project: Party Connection</span></p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;39|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Python - Django</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;40|;  </p>
-        <p className="landing_section_3_text_block">&nbsp;&nbsp;41|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link">Group Project: Music Groups</span></p>
+        <p className="landing_section_3_text_block">&nbsp;&nbsp;41|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * <span className="project_link" onClick={(e)=>{projectRouter(e, 'dojo-group')}}>Group Project: Music Groups</span></p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;42|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Python - Django</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;43|;  </p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;44|;  &nbsp;&nbsp;&nbsp;&nbsp; + University of Washington</p>

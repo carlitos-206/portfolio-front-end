@@ -1,0 +1,76 @@
+@media screen and (min-width:1440px) {
+  .dojoGroupProject_container{
+      position: relative;
+      top: 55px;
+      margin-bottom: 200px;
+    }
+
+    .dojoGroupProject_title_font{
+      text-align: center;
+      font-size: 48px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(255, 0, 0, 0.641);
+      text-shadow: 1px 1px 2px rgb(9, 9, 9), 0 0 1em rgb(19, 19, 20), 0 0 0.2em rgb(19, 19, 20);
+      &:before {
+        content: "";
+        margin: 4px auto 0px;
+        display: block;
+        width: 50%;
+        height: 4px;
+        border-radius: 2px;
+        background: linear-gradient(205deg, #F13F79, #FFC778); 
+        position: relative;
+      };
+      &:after {
+          content: "";
+          margin: 4px auto 0px;
+          display: block;
+          width: 60%;
+          height: 4px;
+          border-radius: 2px;
+          background: linear-gradient(25deg, #F13F79, #FFC778); 
+        }
+    }
+
+    .dojoGroupLogoIcon{
+      width: 80px;
+    }
+    .dojoGroupLogoIcon_flip{
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+
+    .dojoGroupProject_body{
+      width: 80%;
+      position: relative;
+      left: 10%;
+    }
+
+    .dojoGroupProject_text{
+      margin: 10px 0px 10px 0px;
+      font-size: 24px;
+    }
+
+    .dojoGroupProject_text_conclusion{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px 0px 10px 0px;
+      font-size: 24px;
+    }
+
+  .ngrokVid{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    left: 25%;
+  }
+
+  .dojoCert{
+    border: 2px black solid;
+    position: relative;
+    margin-top: 50px;
+  }
+
+
+}
