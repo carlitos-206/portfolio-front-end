@@ -32,6 +32,10 @@ code {
   color: #5a5c69;
 }
 
+.boldFont{
+  font-weight: 900;
+}
+
 .indent{
   position: relative;
   margin-left: 20px;

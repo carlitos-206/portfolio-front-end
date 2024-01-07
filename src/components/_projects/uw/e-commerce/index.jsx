@@ -3,7 +3,7 @@ import "./index.css";
 import logo from "../../../global/images/icons/other/storeLogo.png";
 import grade from "../../../global/images/icons/other/ecommerceGrade.png";
 import Nav from "../../../global/components/nav/nav";
-
+import Footer from "../../../global/components/footer/footer";
 export default function UwEcommerceProject() {
     const codeString = `
 // Functions that hold the Firebase Storage and Firestore connection Logic
@@ -93,6 +93,7 @@ export default function UwEcommerceProject() {
         
       </div>
     </div>
+    <Footer />
     </>
   );
 }

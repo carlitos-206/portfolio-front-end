@@ -51,7 +51,7 @@ export const seaHack = [
     title: "SeaHack_0",
     img: seaHack_0,
     source: "HackSea At Amazon",
-    endPoint: "HackSeaAtAmazon"
+    endPoint: "hacksea-at-amazon"
   },
   {
     id: 1,
@@ -59,7 +59,8 @@ export const seaHack = [
     title: "SeaHack_1",
     img: seaHack_1,
     source: "HackSea At Amazon",
-    endPoint: "HackSeaAtAmazon"
+    endPoint: "hacksea-at-amazon"
+
 
 
   },
@@ -69,7 +70,8 @@ export const seaHack = [
     title: "SeaHack_2",
     img: seaHack_2,
     source: "HackSea At Amazon",
-    endPoint: "HackSeaAtAmazon"
+    endPoint: "hacksea-at-amazon"
+
 
 
   },
@@ -79,7 +81,8 @@ export const seaHack = [
     title: "SeaHack_3",
     img: seaHack_3,
     source: "HackSea At Amazon",
-    endPoint: "HackSeaAtAmazon"
+    endPoint: "hacksea-at-amazon"
+
 
 
   },
@@ -89,7 +92,8 @@ export const seaHack = [
     title: "SeaHack_4",
     img: seaHack_4,
     source: "HackSea At Amazon",
-    endPoint: "HackSeaAtAmazon"
+    endPoint: "hacksea-at-amazon"
+
 
   },
   {
@@ -98,7 +102,8 @@ export const seaHack = [
     title: "SeaHack_5",
     img: SeaHack_5,
     source: "HackSea At Amazon",
-    endPoint: "HackSeaAtAmazon"
+    endPoint: "hacksea-at-amazon"
+
 
 
   }
@@ -111,7 +116,7 @@ export const aiHack2 = [
     title: "aiHack2_0",
     img: aiHack2_0,
     source: "Ai Hackathon 2.0 at SURF Incubator",
-    endPoint: "AiHackathon2_0atSURFIncubator"
+    endPoint: "AiHackathon2.0-at-SURF-Incubator"
   },
   {
     id: 1,
@@ -119,7 +124,7 @@ export const aiHack2 = [
     title: "aiHack2_1",
     img: aiHack2_1,
     source: "Ai Hackathon 2.0 at SURF Incubator",
-    endPoint: "AiHackathon2_0atSURFIncubator"
+    endPoint: "AiHackathon2.0-at-SURF-Incubator"
   },
   {
     id: 2,
@@ -127,7 +132,7 @@ export const aiHack2 = [
     title: "aiHack2_2",
     img: aiHack2_2,
     source: "Ai Hackathon 2.0 at SURF Incubator",
-    endPoint: "AiHackathon2_0atSURFIncubator"
+    endPoint: "AiHackathon2.0-at-SURF-Incubator"
 
   },
   {
@@ -136,7 +141,7 @@ export const aiHack2 = [
     title: "aiHack2_3",
     img: aiHack2_3,
     source: "Ai Hackathon 2.0 at SURF Incubator",
-    endPoint: "AiHackathon2_0atSURFIncubator"
+    endPoint: "AiHackathon2.0-at-SURF-Incubator"
 
   },
 ]
@@ -148,7 +153,7 @@ export const aiHack3 = [
     title: "aiHack3_0",
     img: aiHack3_0,
     source: "Ai Hackathon 3.0 at SURF Incubator",
-    endPoint: "AiHackathon3_0atSURFIncubator"
+    endPoint: "AiHackathon3.0-at-SURF-Incubator"
     
   },
   {
@@ -157,7 +162,7 @@ export const aiHack3 = [
     title: "aiHack3_1",
     img: aiHack3_1,
     source: "Ai Hackathon 3.0 at SURF Incubator",
-    endPoint: "AiHackathon3_0atSURFIncubator"
+    endPoint: "AiHackathon3.0-at-SURF-Incubator"
 
   },
   {
@@ -166,7 +171,7 @@ export const aiHack3 = [
     title: "aiHack3_2",
     img: aiHack3_2,
     source: "Ai Hackathon 3.0 at SURF Incubator",
-    endPoint: "AiHackathon3_0atSURFIncubator"
+    endPoint: "AiHackathon3.0-at-SURF-Incubator"
   },
   {
     id: 3,
@@ -174,7 +179,7 @@ export const aiHack3 = [
     title: "aiHack3_3",
     img: aiHack3_3,
     source: "Ai Hackathon 3.0 at SURF Incubator",
-    endPoint: "AiHackathon3_0atSURFIncubator"
+    endPoint: "AiHackathon3.0-at-SURF-Incubator"
 
   },
   {
@@ -183,7 +188,7 @@ export const aiHack3 = [
     title: "aiHack3_4",
     img: aiHack3_4,
     source: "Ai Hackathon 3.0 at SURF Incubator",
-    endPoint: "AiHackathon3_0atSURFIncubator"
+    endPoint: "AiHackathon3.0-at-SURF-Incubator"
 
   },
 ]

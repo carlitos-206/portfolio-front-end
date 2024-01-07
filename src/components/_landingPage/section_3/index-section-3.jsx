@@ -15,6 +15,15 @@ export default function LandingSection3(){
       case 'uw-ecommerce':
         window.open('/university-of-washington-eCommerce-project', '_self')
         break;
+      case 'personal-portfolios':
+        window.open('/personal-project-portfolios', '_self')
+        break;
+      case 'personal-openai':
+        window.open('/personal-project-openai-interface', '_self')
+        break;
+      case 'personal-browserData':
+        window.open('/personal-project-browser-data-collection', '_self')
+        break;
       default:
         console.log('default')
     }
@@ -67,16 +76,16 @@ export default function LandingSection3(){
         <p className="landing_section_3_text_block">&nbsp;&nbsp;55|;  </p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;56|;  &nbsp;&nbsp; - Top Personal Projects:</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;57|;  </p>
-        <p className="landing_section_3_text_block">&nbsp;&nbsp;58|;  &nbsp;&nbsp;&nbsp;&nbsp; + <span className="project_link">Multiple Portfolio Iterations </span></p>
+        <p className="landing_section_3_text_block">&nbsp;&nbsp;58|;  &nbsp;&nbsp;&nbsp;&nbsp; + <span className="project_link" onClick={(e)=>{projectRouter(e, 'personal-portfolios')}}>Multiple Portfolio Iterations </span></p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;59|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Python</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;60|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * JavaScript</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;61|;  </p>
-        <p className="landing_section_3_text_block">&nbsp;&nbsp;62|;  &nbsp;&nbsp;&nbsp;&nbsp; + <span className="project_link">OpenAi API Interface</span></p>
+        <p className="landing_section_3_text_block">&nbsp;&nbsp;62|;  &nbsp;&nbsp;&nbsp;&nbsp; + <span className="project_link" onClick={(e)=>{projectRouter(e, 'personal-openai')}}>OpenAi API Interface</span></p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;63|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Python</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;64|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * JavaScript</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;65|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * AWS</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;66|;  </p>
-        <p className="landing_section_3_text_block">&nbsp;&nbsp;67|;  &nbsp;&nbsp;&nbsp;&nbsp; + <span className="project_link">Browser Data Collection</span></p>
+        <p className="landing_section_3_text_block">&nbsp;&nbsp;67|;  &nbsp;&nbsp;&nbsp;&nbsp; + <span className="project_link" onClick={(e)=>{projectRouter(e, 'personal-browserData')}}>Browser Data Collection</span></p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;68|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Python</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;69|;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * JavaScript</p>
         <p className="landing_section_3_text_block">&nbsp;&nbsp;70|;  </p>

@@ -1,0 +1,101 @@
+@media screen and (min-width: 1440px) {
+  /* Personal-OpenAI Interface -----------------------------------------------------------------------------------
+    ----------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------
+    */
+    .openAiArticleContainer{
+      position: relative;
+      top: 75px;
+      margin-bottom: 155px;
+      height: 100%;
+    }
+    .openAiArticle_title_container{
+      /* background-color: #000; */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /* flex-direction: column; */
+      font-size: 48px;
+      font-family: sans-serif;
+      background-image: linear-gradient(to right, #553c9a 45%, #ee4b2b);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .openAirticle_title_text{
+
+    }
+    #projects_openAi_outline_text{
+      position: relative;
+      /* left: -25%; */
+      font-style: italic;
+      color: #000;
+      font-size:medium;
+    }
+    .project_magic_header{
+      /* background-color: #000; */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 36px;
+      font-family: sans-serif;
+      background-image: linear-gradient(to left, #553c9a 45%, #ee4b2b);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .openAiArticle_body{
+      position: relative;
+      font-size: 24px;
+      width: 95%;
+      left: 2.5%;
+      /* padding: 15px 15% 0% 15%; */
+      display: flex;
+    }
+    .openAiArticle_text{
+      width: 50%;
+    }
+    .openAiArticle-text-content{
+      margin-top: 50px;
+    }
+    .OpenAi_tools_containter{
+      position: relative;
+      top: 25px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    .project_vid{
+      margin: 20px;
+      height: 400px;
+    }
+
+    .project_chatContainer{
+      width: 100%;
+      top: 520px;
+      left: 50%;
+      z-index: 0;
+      margin: 15px 0px 0px 0px;
+    }
+    .project_input-container{
+      display: flex;
+      position: relative;
+      bottom: 5px;
+    }
+    .project_chatHeader{
+      /* border: solid 1px red; */
+      position: relative;
+      color: black;
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      margin-right:15px ;
+      width: 100%;
+    }
+    .projectMagicContainer{
+      display: flex;
+      flex-direction: column;
+    }
+
+}

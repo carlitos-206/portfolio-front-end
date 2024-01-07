@@ -3,6 +3,7 @@ import dojoGroupProjectLogo from "../../../global/images/icons/other/dojoGroupPr
 import dojoCert from "../../../global/images/icons/other/dojoCert.png";
 import "./index.css";
 import Nav from "../../../global/components/nav/nav";
+import Footer from "../../../global/components/footer/footer";
 export default function DojoGroupProject() {
   
   const openPopUp = (e, source)=>{
@@ -40,6 +41,7 @@ export default function DojoGroupProject() {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   );
 }

@@ -43,7 +43,7 @@ export default function LandingSection6() {
         for(let i = 0; i < fields.length; i++) {
           fields[i].value = "";
         }
-        console.log("email sent");
+        console.log("email sent", formValues);
         setName("");
         setEmail("");
         setReason("");

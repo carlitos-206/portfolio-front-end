@@ -46,7 +46,7 @@ export default function LandingSection5() {
                     {
                       carouselImgs.map((item, index) => {
                         return(
-                          <a href={`/community/hackathon/${item.endPoint}`}>
+                          <a href={`hackathon-${item.endPoint}`}>
                             <button key={index} className="communityProjectRenderedBtn">{item.project}</button>
                           </a>
                           

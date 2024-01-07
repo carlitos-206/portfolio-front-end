@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "./index.css";
 import Nav from "../../../global/components/nav/nav";
-
+import Footer from "../../../global/components/footer/footer";
 export default function DojoSoloProject() {
   const [active, setActive] = useState(false);
   const [visible, setVisible] = useState(false);
@@ -44,9 +44,9 @@ export default function DojoSoloProject() {
         <p className="indent dojoSoloProjectBody_text">The 'what if' paradox often haunts creators. What if I had embarked on this project with the knowledge I have now? How much more sophisticated and user-friendly could it have been? But it's important to realize that without these formative experiences, the knowledge and skills we value today wouldn't exist. The journey is as significant as the destination.</p>
         <p className="indent dojoSoloProjectBody_text">I am more than happy to offer a real-time demonstration of the app for those interested. A quick deployment via an Ngrok web tunnel will let you delve into this early piece of my developer journey</p>
         <p className="indent dojoSoloProjectBody_text">In conclusion, "Party Connection" symbolizes more than just code or functionality; it embodies passion, learning, and the relentless pursuit of growth. It's a testament to where I began and a reminder of how far I've come. Looking ahead, I am eager to tackle more challenges, acquire new skills, and build solutions that make a difference.</p>
-
       </div>
     </div>
+    <Footer />
       </>
   );
 }
