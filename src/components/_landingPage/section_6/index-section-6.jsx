@@ -82,6 +82,7 @@ export default function LandingSection6() {
             label="Enter your name"
             className="form-input name-input"
             onChange={(e) => setName(e.target.value)}
+            type="text"
           />
           <p className="name-error-message" style={{display:'none'}}>
             Please enter your name
@@ -94,6 +95,7 @@ export default function LandingSection6() {
             label="Enter your Email"
             className="form-input email-input"
             onChange={(e) => setEmail(e.target.value)}
+            type="email"
           />        
           <p className="email-error-message" style={{display:'none'}}>
             Please enter a valid email
@@ -116,6 +118,7 @@ export default function LandingSection6() {
             rows={4}
             className="form-input"
             onChange={(e) => setMessage(e.target.value)}
+            type="text"
           />         
         </div>
           <FormControlLabel required control={<Checkbox onChange={(e)=>{setAgreement(agreement => !agreement)}} />} label="I agree to be contacted via email." />
